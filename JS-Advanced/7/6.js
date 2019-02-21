@@ -21,10 +21,13 @@ let result = (function () {
 
   class Card {
     constructor(face, suit) {
+      console.log('in constructor 1');
       checkFace(face);
       checkSuit(suit);
       this._face = face;
       this._suit = suit;
+
+      console.log('in constructor 2');
     }
 
     get face() {
@@ -34,6 +37,8 @@ let result = (function () {
     set face(value) {
       checkFace(value);
       this._face = value;
+
+      console.log('in face setter');
     }
 
     get suit() {
@@ -57,7 +62,7 @@ let Suits = result.Suits;
 
 let card = new Card('2', Suits.CLUBS);
 card.face = 'A';
-card.suit = Suits.DIAMONDS;
+// card.suit = Suits.DIAMONDS;
 
 console.log(card);
 
