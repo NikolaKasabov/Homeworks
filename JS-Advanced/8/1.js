@@ -7,8 +7,6 @@ class Request {
     this.response = undefined;
     this.fulfilled = false;
   }
-
-  
 }
 
-let myData = new Request('GET', 'http://google.com', 'HTTP/1.1', '');
+const myData = new Request('GET', 'http://google.com', 'HTTP/1.1', '');
