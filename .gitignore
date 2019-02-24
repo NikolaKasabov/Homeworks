@@ -4,4 +4,4 @@
 package.json
 package-lock.json
 .eslintrc.json
-test.js
+testing.js

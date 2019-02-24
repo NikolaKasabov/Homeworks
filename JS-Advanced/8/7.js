@@ -17,7 +17,7 @@ class CheckingAccount {
       throw new TypeError('Last name must be between 3 and 20 characters long');
     }
 
-    const nameRegex = /^[a-zA-Z]$/;
+    const nameRegex = /^[a-zA-Z]+$/;
     if (!nameRegex.test(firstName)) {
       throw new TypeError('First name must contain only Latin characters');
     }
