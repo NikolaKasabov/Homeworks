@@ -28,4 +28,4 @@ class CheckingAccount {
   }
 }
 
-let acc = new CheckingAccount('131455', 'ivan@some.com', 'Ivan', 'P3trov');
+const acc = new CheckingAccount('131455', 'ivan@some.com', 'Ivan', 'P3trov');
