@@ -119,6 +119,9 @@ class Warehouse {
   }
 }
 
+// let warehouse = new Warehouse(12);
+
+// console.log(warehouse.capacity);
 
 
 
@@ -130,9 +133,11 @@ describe('testing', function () {
     assert.throws(function () { let warehouse = new Warehouse(); }, 'Invalid given warehouse space');
   });
 
-  it('get capacity', function () {
+  it('capacity', function () {
     let warehouse = new Warehouse(100);
-    assert.equal(warehouse.capacity, 100);    
+    assert.equal(warehouse.capacity, 100);
+    assert.throws(function () { warehouse.capacity = 0; }, 'Invalid given warehouse space');
+    assert.throws(function () { warehouse.capacity = -1; }, 'Invalid given warehouse space');
   })
 
   it('addProduct(type, product, quantity)', function () {
