@@ -32,7 +32,6 @@ function solve(arr) {
   for (const line of arr) {
     let [command, name, third, fourth] = line.split(' ');
     if (command === 'create') {
-
       processor.create(name);
       if (third === 'inherit') {
         processor.inherit(name, fourth);
