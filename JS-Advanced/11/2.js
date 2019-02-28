@@ -4,11 +4,9 @@ function search() {
     return;
   }
 
-  $('li').map((i, e) => {
-    if (e.textContent.includes(searchText)) {
-      return $(e).css('font-weight', 'bold');
-    } else {
-      return $(e).css('font-weight', '');
-    }
-  });
+  $(`li`).css('font-weight', '');
+
+  let towns = $(`li:contains(${searchText})`).css('font-weight', 'bold');
+  let count = towns.length;
+  $('#result').text(`${count} matches found.`);
 }
