@@ -46,16 +46,18 @@ function validate() {
       isAllValid = false;
     }
 
-    if (isPasswordValid) {
-      passwordElem.css('border-color', '');
-    } else {
-      passwordElem.css('border-color', 'red');
-      isAllValid = false;
-    }
+    // if (isPasswordValid) {
+    //   passwordElem.css('border-color', '');
+    // } else {
+    //   passwordElem.css('border-color', 'red');
+    //   isAllValid = false;
+    // }
 
-    if (arePasswordsSame && isPasswordValid) {
+    if (isPasswordValid && arePasswordsSame && passwordElem.val().length !== 7) {
+      passwordElem.css('border-color', '');
       repeatPasswordElem.css('border-color', '');
     } else {
+      passwordElem.css('border-color', 'red');
       repeatPasswordElem.css('border-color', 'red');
       isAllValid = false;
     }
