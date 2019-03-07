@@ -29,7 +29,7 @@ class Vacation {
 
   removeChild(name, grade) {
     // check if kid is added
-    if (this.kids[grade].some(v => v.startsWith('name'))) {
+    if (this.kids.hasOwnProperty(grade) && this.kids[grade].some(v => v.startsWith('name'))) {
       const indexToDelete = this.kids[grade].findIndex(v => v.startsWith('name'));
       this.kids[grade].splice(indexToDelete, 1);
       return this.kids[grade];
@@ -67,12 +67,12 @@ class Vacation {
   }
 }
 
-let vacation = new Vacation('Miss Elizabeth', 'Dubai', 2000);
+let vacation = new Vacation('Mr Pesho', 'San diego', 2000);
+vacation.registerChild('Gosho', 5, 2000);
+vacation.registerChild('Lilly', 6, 2100);
 
-vacation.registerChild('Gosho', 5, 3000);
-vacation.registerChild('Lilly', 6, 1500);
-vacation.registerChild('Pesho', 7, 4000);
-vacation.registerChild('Tanya', 5, 5000);
-vacation.registerChild('Mitko', 10, 5500);
+console.log(vacation.removeChild('Gosho', 9));
 
-console.log(vacation.toString());
+vacation.registerChild('Pesho', 6, 2400);
+vacation.registerChild('Gosho', 5, 2000);
+
