@@ -1,6 +1,5 @@
-let found = ['asd', 'qwe'].findIndex((v, i) => {
-  return v.startsWith('as');
-})
-  
-console.log(found);
-  
+let obj = {
+  '6': 'asd'
+};
+
+console.log(obj.hasOwnProperty(6));
