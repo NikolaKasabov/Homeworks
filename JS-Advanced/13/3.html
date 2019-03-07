@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <table border="1" id="customers">
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>eve@gmail.com</td>
+    </tr>
+    <tr>
+      <td>Nick</td>
+      <td>nick@yahooo.com</td>
+    </tr>
+    <tr>
+      <td>Didi</td>
+      <td>didi@didi.net</td>
+    </tr>
+    <tr>
+      <td>Tedy</td>
+      <td>tedy@tedy.com</td>
+    </tr>
+  </table>
+  Email: <input type="text" name="email" />
+  <button onclick="deleteByEmail()">Delete</button>
+  <div id="result" />
+  <script>
+    function deleteByEmail() {
+      let email = $('input[name="email"]').val();
+      let foundTd = $(`td:contains("${email}")`);
+
+      if (foundTd.length > 0) {
+        foundTd.parent().remove();
+      } else {
+        $('div#result').text('Not found.');
+      }
+    }
+  </script>
+
+</body>
+
+</html>
