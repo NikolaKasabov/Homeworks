@@ -1,7 +1,6 @@
-let kids = {
-  6: [],
-  5: [],
-  4: [],
-  3: [],
-  2: []
-}
+let found = ['asd', 'qwe'].findIndex((v, i) => {
+  return v.startsWith('as');
+})
+  
+console.log(found);
+  
