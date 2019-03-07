@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>List of Items</h1>
+  <ul id="items">
+    <li>First</li>
+    <li>Second</li>
+  </ul>
+  <input type="text" id="newItemText" />
+  <input type="button" value="Add" onclick="addItem()">
+  <script>
+    function addItem() {
+      let text = $('input#newItemText').val();
+      let newLi = $(`<li>${text}</li>`);
+      let deleteBtn = $('<a href="#">[Delete]</a>').click(() => newLi.remove());
+      newLi.append(deleteBtn);
+      $('ul#items').append(newLi);
+    }
+    
+  </script>
+
+</body>
+
+</html>
