@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="time" style="border:3px solid blue; text-align:center; font-size:2em; margin-bottom:10px">00:00</div>
+  <button id="startBtn">Start</button>
+  <button id="stopBtn" disabled="true">Stop</button>
+  <script>
+    window.onload = function stopWatch() {
+      let timer = 0;
+      let startButton = $('button#startBtn');
+      let stopButton = $('button#stopBtn');
+      let timerElem = $('div#time');
+      let seconds, minutes, timerString, intervalFunc;
+
+      function start() {
+        timerElem.text('00:00');
+        timer = 1;
+
+        intervalFunc = setInterval(() => {
+          seconds = timer % 60;
+          minutes = Math.floor(timer / 60) % 60;
+          timerString = ('0' + minutes).slice(-2) + ':' + ('0' + seconds).slice(-2);
+          timerElem.text(timerString);
+          timer += 1;
+        }, 1000);
+
+        startButton.attr('disabled', true);
+        stopButton.attr('disabled', false);
+      }
+
+      function stop() {
+        clearInterval(intervalFunc);
+        startButton.attr('disabled', false);
+        stopButton.attr('disabled', true);
+      }
+
+      startButton.on('click', start);
+      stopButton.on('click', stop);
+    }
+  </script>
+
+</body>
+
+</html>
