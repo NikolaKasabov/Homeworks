@@ -1,6 +1,7 @@
 /gittest
 /.vscode
 /node_modules
+/JS-Advanced/temp
 package.json
 package-lock.json
 .eslintrc.json
