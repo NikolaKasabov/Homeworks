@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script src="../jquery-3.3.1.min.js"></script>
+  <script src="./index.js"></script>
+  <title>Subtraction</title>
+  <style>
+    #content {
+      width: 1000px;
+    }
+
+    #content div {
+      float: left;
+      width: 300px;
+      height: 300px;
+      margin: 2em;
+      background: #5555ff;
+      text-align: center;
+    }
+
+    #content div p {
+      color: white;
+      margin: 6em 3em 6em 3em;
+    }
+  </style>
+
+</head>
+
+<div id="content"></div>
+
+<body onload="create(['Section 1', 'Section 2', 'Section 3', 'Section 4']);">
+  <script>
+    function create(sentences) {
+      let container = $('div#content');
+
+      for (const string of sentences) {
+        let div = $('<div>');
+        let p = $('<p>');
+        p.css('display', 'none')
+          .text(string);
+        div.click((e) => {
+          $(e.target).children('p').css('display', 'block');
+        })
+        div.append(p);
+        container.append(div);
+      }
+    }
+  </script>
+</body>
+
+
+</html>
