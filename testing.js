@@ -1,11 +1,21 @@
-let arr = [
-  { name: 'Pesho' },
-  { name: 'Gosho' },
-  { name: 'Penka' }
-];
+class Human{
+  constructor(name) {
+    this.name = name;
+  }
 
-arr = arr.filter(v => {
-  return v.name !== 'Gosho';
-});
+  get name() {
+    return this._name;
+  }
 
-console.log(arr);
+  set name(value) {
+    if (value.length > 3) {
+      this._name = value;
+    } else {
+      console.log('tcu');
+    }
+  }
+}
+
+let h = new Human('as');
+console.log(h);
+console.log(h.name);
