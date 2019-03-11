@@ -1,9 +1,5 @@
 class BookCollection {
   constructor(shelfGenre, room, shelfCapacity) {
-    // if (!['livingRoom', 'bedRoom', 'closet'].includes(room)) {
-    //   throw `Cannot have book shelf in ${room}`;
-    // }
-
     this.room = room;
     this.shelfGenre = shelfGenre;
     this.shelfCapacity = shelfCapacity;
