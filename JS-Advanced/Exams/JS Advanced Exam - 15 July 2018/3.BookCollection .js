@@ -1,14 +1,25 @@
 class BookCollection {
   constructor(shelfGenre, room, shelfCapacity) {
-    if (!['livingRoom', 'bedRoom', 'closet'].includes(room)) {
-      // throw new Error(`Cannot have book shelf in ${room}`);
-      throw `Cannot have book shelf in ${room}`;
-    }
+    // if (!['livingRoom', 'bedRoom', 'closet'].includes(room)) {
+    //   throw `Cannot have book shelf in ${room}`;
+    // }
 
     this.room = room;
     this.shelfGenre = shelfGenre;
     this.shelfCapacity = shelfCapacity;
     this.shelf = [];
+  }
+
+  get room() {
+    return this._room;
+  }
+
+  set room(value) {
+    if (!['livingRoom', 'bedRoom', 'closet'].includes(value)) {
+      throw `Cannot have book shelf in ${value}`;
+    }
+
+    this._room = value;
   }
 
   addBook(bookName, bookAuthor, genre) {
@@ -61,7 +72,7 @@ class BookCollection {
   }
 }
 
-let livingRoom = new BookCollection("Programming", "livingRoom", 5)
+let livingRoom = new BookCollection("Programming", "livingRoom12", 5)
 livingRoom.addBook("Introduction to Programming with C#", "Svetlin Nakov")
 livingRoom.addBook("Introduction to Programming with Java", "Svetlin Nakov")
 livingRoom.addBook("Programming for .NET Framework", "Svetlin Nakov");
