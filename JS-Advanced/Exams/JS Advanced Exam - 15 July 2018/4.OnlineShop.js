@@ -20,5 +20,57 @@ function onlineShop(selector) {
         <label class="field">BGN</label>
     </div>`;
   $(selector).html(form);
+
   // Write your code here
+  let nameEl = $('input.custom-select');
+  let priceEl = $('input#price');
+  let quantityEl = $('input#quantity');
+  let ulEl = $('ul.display');
+  let btnEl = $('button#submit');
+  let capacityEl = $('input#capacity');
+  let sumEl = $('input#sum');
+
+  let itemsNumber = 0;
+  let sum = 0;
+
+  // disable/enable the submit button
+  nameEl.on('input', e => {
+    if (e.target.value) {
+      btnEl.attr('disabled', false);
+    } else {
+      btnEl.attr('disabled', true);
+    }
+  });
+
+  btnEl.click(() => {
+    let freeSpace = 150 - itemsNumber;
+    let currentQuantity = +quantityEl.val();
+    let currentPrice = +priceEl.val();
+    if (currentQuantity > freeSpace) {
+      currentQuantity = freeSpace;
+    }
+
+    itemsNumber += currentQuantity;
+    sum += currentPrice;
+    sumEl.val(sum);
+
+
+    // check is inventory full
+    if (itemsNumber < 150) {
+      capacityEl.val(itemsNumber);
+    } else {
+      capacityEl.val('full').addClass('fullCapacity');
+
+      nameEl.attr('disabled', true);
+      priceEl.attr('disabled', true);
+      quantityEl.attr('disabled', true);
+      btnEl.attr('disabled', true);
+    }
+
+    let li = $(`<li>Product: ${nameEl.val()} Price: ${priceEl.val()} Quantity: ${currentQuantity}</li>`);
+    ulEl.append(li);
+    nameEl.val('');
+    priceEl.val('');
+    quantityEl.val('');
+  });
 }
