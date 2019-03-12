@@ -94,20 +94,40 @@ describe('testing', function () {
     });
   });
 
-  describe('downloadSong(artist, song, lyrics) ', function () {
-    it('is object', function () {
-      assert.isObject(sofunify.allSongs);
+  describe('downloadSong(artist, song, lyrics)', function () {
+    it('valid input', function () {
+      sofunify.downloadSong('Eminem', 'Venom', 'Knock, Knock let the devil in...');
+      sofunify.downloadSong('Eminem', 'Phenomenal', 'IM PHENOMENAL...');
+      assert.deepEqual(sofunify.allSongs, { Eminem: {rate: 0,votes: 0, songs:['Venom - Knock, Knock let the devil in...','Phenomenal - IM PHENOMENAL...']}});
     });
-    it('is empty', function () {
-      assert.isEmpty(sofunify.allSongs);
+  });
+
+  describe('playSong(song)', function () {
+    it('valid input', function () {
+      sofunify.downloadSong('Eminem', 'Phenomenal', 'IM PHENOMENAL...');
+      assert.equal(sofunify.playSong('Phenomenal'), 'Eminem:\nPhenomenal - IM PHENOMENAL...\n');
+    });
+
+    it('no input', function () {
+      assert.equal(sofunify.playSong('Phenomenal'), "You have not downloaded a Phenomenal song yet. Use SoftUniFy's function downloadSong() to change that!");
+    });
+  });
+
+  describe('songsList()', function () {
+    it('valid input', function () {
+      sofunify.downloadSong('Eminem', 'Venom', 'Knock, Knock let the devil in...');
+      sofunify.downloadSong('Eminem', 'Phenomenal', 'IM PHENOMENAL...');
+      assert.equal(sofunify.songsList, 'Venom - Knock, Knock let the devil in...\nPhenomenal - IM PHENOMENAL...');
+    });
+
+    it('no input', function () {
+      assert.equal(sofunify.songsList, 'Your song list is empty');
+    });
+  });
+
+  describe('rateArtist() sums the values of all votes on the current artist and return the average rate.', function () {
+    it('no input', function () {
+      assert.equal(sofunify.rateArtist('Eminem'), 'The Eminem is not on your artist list.');
     });
   });
 });
-
-// let sofunify = new SoftUniFy();
-
-// sofunify.downloadSong('Eminem', 'Venom', 'Knock, Knock let the devil in...');
-// sofunify.downloadSong('Eminem', 'Phenomenal', 'IM PHENOMENAL...');
-// sofunify.downloadSong('Dub Fx', 'Light Me On Fire', 'You can call me a liar.. ');
-
-// console.log(sofunify.allSongs);
