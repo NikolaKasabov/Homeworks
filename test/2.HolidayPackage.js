@@ -79,5 +79,21 @@ describe('unit testing', function () {
     assert.equal(holidayPackage.showVacationers(), 'Vacationers:\nPesho Peshov\nGosho Goshov');
   });
 
-  it('')
+  it('addVacationer()', function () {
+    assert.throws(function () { holidayPackage.addVacationer(5) }, 'Vacationer name must be a non-empty string');
+    assert.throws(function () { holidayPackage.addVacationer(' ') }, 'Vacationer name must be a non-empty string');//???????? ' ' || ''
+    assert.throws(function () { holidayPackage.addVacationer('pesho') }, 'Name must consist of first name and last name');
+    assert.throws(function () { holidayPackage.addVacationer('pesho pesho pesho') }, 'Name must consist of first name and last name');
+    holidayPackage.addVacationer('pesho peshov');
+    assert.deepEqual(holidayPackage.vacationers, ['pesho peshov']);
+  });
+
+  it('generateHolidayPackage()', function () {
+    assert.throws(function () { holidayPackage.generateHolidayPackage() }, 'There must be at least 1 vacationer added');
+    holidayPackage.addVacationer('pesho peshov');
+    holidayPackage.addVacationer('gosho goshov');
+    assert.equal(holidayPackage.generateHolidayPackage(), 'Holiday Package Generated\nDestination: Italy\nVacationers:\npesho peshov\ngosho goshov\nPrice: 1000');
+    holidayPackage.insuranceIncluded = true;
+    assert.equal(holidayPackage.generateHolidayPackage(), 'Holiday Package Generated\nDestination: Italy\nVacationers:\npesho peshov\ngosho goshov\nPrice: 1100');
+  });
 });
