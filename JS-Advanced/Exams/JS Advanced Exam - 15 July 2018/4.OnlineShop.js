@@ -1,3 +1,5 @@
+// 90/100
+
 function onlineShop(selector) {
   let form = `<div id="header">Online Shop Inventory</div>
     <div class="block">
@@ -53,7 +55,6 @@ function onlineShop(selector) {
     itemsNumber += currentQuantity;
     sum += currentPrice;
     sumEl.val(sum);
-
 
     // check is inventory full
     if (itemsNumber < 150) {
