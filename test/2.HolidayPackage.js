@@ -61,7 +61,23 @@ describe('unit testing', function () {
 
   it('Must be instantiated with two parameters – a string destination and a string season.', function () {
     assert.instanceOf(holidayPackage, HolidayPackage);
-    // assert.equal(holidayPackage.destination, 'Italy');
-    // assert.equal(holidayPackage.season, 'Summer');
+    assert.isObject(holidayPackage);
   });
+
+  it('insuranceIncluded', function () {
+    assert.throws(function () { holidayPackage.insuranceIncluded = '' }, 'Insurance status must be a boolean');
+    assert.isBoolean(holidayPackage.insuranceIncluded);
+    assert.equal(holidayPackage.insuranceIncluded, false);
+    holidayPackage.insuranceIncluded = true;
+    assert.equal(holidayPackage.insuranceIncluded, true);
+  });
+
+  it('showVacationers()', function () {
+    assert.equal(holidayPackage.showVacationers(), "No vacationers are added yet");
+    holidayPackage.addVacationer('Pesho Peshov');
+    holidayPackage.addVacationer('Gosho Goshov');
+    assert.equal(holidayPackage.showVacationers(), 'Vacationers:\nPesho Peshov\nGosho Goshov');
+  });
+
+  it('')
 });
