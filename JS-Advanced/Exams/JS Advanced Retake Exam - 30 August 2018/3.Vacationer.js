@@ -45,7 +45,9 @@ class Vacationer {
     return id;
   }
 
-  
+  addCreditCardInfo(inputArr) {
+    
+  }
 }
 
 
@@ -63,19 +65,18 @@ try {
 
 console.log(vacationer1.testing);
 
-// // Should throw an error (Missing credit card information)
-// try {
-//   let vacationer3 = new Vacationer(["Zdravko", "Georgiev", "Petrov"]);
-//   vacationer3.addCreditCardInfo([123456789, "20/10/2018"]);
-// } catch (err) {
-//   console.log("Error: " + err.message);
-// }
+// Should throw an error (Missing credit card information)
+try {
+  let vacationer3 = new Vacationer(["Zdravko", "Georgiev", "Petrov"]);
+  vacationer3.addCreditCardInfo([123456789, "20/10/2018"]);
+} catch (err) {
+  console.log("Error: " + err.message);
+}
 
-// vacationer1.addDestinationToWishList('Spain');
-// vacationer1.addDestinationToWishList('Germany');
-// vacationer1.addDestinationToWishList('Bali');
+vacationer1.addDestinationToWishList('Spain');
+vacationer1.addDestinationToWishList('Germany');
+vacationer1.addDestinationToWishList('Bali');
 
-// // Return information about the vacationers
-// console.log(vacationer1.getVacationerInfo());
-// console.log(vacationer2.getVacationerInfo());
-
+// Return information about the vacationers
+console.log(vacationer1.getVacationerInfo());
+console.log(vacationer2.getVacationerInfo());

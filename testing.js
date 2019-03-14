@@ -1,6 +1,6 @@
 class Person {
   constructor(value) {
-    this.
+    
   }
 
   get name() {
