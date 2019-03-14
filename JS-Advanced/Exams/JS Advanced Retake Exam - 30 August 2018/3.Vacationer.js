@@ -6,7 +6,8 @@ class Vacationer {
       expirationDate: creditCardArr ? creditCardArr[1] : '',
       securityNumber: creditCardArr ? creditCardArr[2] : 111
     };
-    this.idNumber;
+    this.wishList = [];
+    this.idNumber = this.generateIDNumber(namesArr);
   }
 
   get fullName() {
@@ -28,6 +29,23 @@ class Vacationer {
 
     this._fullName = { firstName: namesArr[0], middleName: namesArr[1], lastName: namesArr[2] };
   }
+
+  generateIDNumber(namesArr) {
+    let id = 231 * namesArr[0][0].charCodeAt(0);
+    id += 139 * namesArr[1].length;
+
+    let vowels = ["a", "e", "o", "i", "u"];
+    let lastNameLastLetter = namesArr[2][namesArr[2].length - 1];
+    if (vowels.includes(lastNameLastLetter)) {
+      id += 8;
+    } else {
+      id += 7;
+    }
+
+    return id;
+  }
+
+  
 }
 
 
@@ -43,7 +61,7 @@ try {
   console.log("Error: " + err.message);
 }
 
-console.log(vacationer1);
+console.log(vacationer1.testing);
 
 // // Should throw an error (Missing credit card information)
 // try {
