@@ -1,5 +1,18 @@
-let arr = [1, 2, 3, 'asd'].reduce((acc, cur) => {
-  return acc.concat(cur);
-}, []);
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
 
-console.log(arr);
+  get name() {
+    return this._name;
+  }
+
+  set name(value) {
+    this._name = { ime: value };
+  }
+}
+
+let p = new Person('Pesho');
+console.log(p);
+p.name = 'Gosho';
+console.log(p);
