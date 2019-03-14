@@ -46,7 +46,9 @@ class Vacationer {
   }
 
   addCreditCardInfo(inputArr) {
-    
+    if (inputArr.length < 3) {
+      throw new Error('Missing credit card information');
+    }
   }
 }
 
