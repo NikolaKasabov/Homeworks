@@ -1,6 +1,6 @@
 class Person {
-  constructor(name) {
-    this.name = name;
+  constructor(value) {
+    this.
   }
 
   get name() {
@@ -8,11 +8,14 @@ class Person {
   }
 
   set name(value) {
+    console.log(value);
     this._name = { ime: value };
+    // this._name = name;
   }
 }
 
 let p = new Person('Pesho');
-console.log(p);
-p.name = 'Gosho';
-console.log(p);
+// p.name = 'Gosho';
+
+// console.log(0 || '' || false);
+// console.log(5 && true && 'false' && 'asd');
