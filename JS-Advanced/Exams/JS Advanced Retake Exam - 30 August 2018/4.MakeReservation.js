@@ -97,9 +97,12 @@ function makeReservation(selector) {
     select.append('<option selected disabled hidden>Choose</option>');
     select.append('<option value="creditCard">Credit Card</option>');
     select.append('<option value="bankTransfer">Bank Transfer</option>');
-    let div = $('<div id="extraDetails">');    
+    let div = $('<div id="extraDetails">');
 
     containerEl.append(h2, select, div);
+
+    disableSubmitBtn();
+    disableEditAndContinueBtn();
 
     selectEl = $('#paymentOptions');
     selectEl.on('change', onSelectChange);
@@ -114,14 +117,13 @@ function makeReservation(selector) {
     btn.click(function () {
       $('#wrapper').text('').append($('<h4>Thank you for your reservation!</h4>'));
     });
-    
+
     if (selectEl.val() === 'creditCard') {
       let div1 = $('<div class="inputLabel">Card Number<input></div>');
       let div2 = $('<div class="inputLabel">Expiration Date<input></div>');
       let div3 = $('<div class="inputLabel">Security Numbers<input></div>');
-      let br = $('<br />');
 
-      detailsDiv.append(div1, br, div2, br, div3, br, btn);
+      detailsDiv.append(div1, $('<br>'), div2, $('<br>'), div3, $('<br>'), btn);
     } else if (selectEl.val() === 'bankTransfer') {
       let p = $('<p>You have 48 hours to transfer the amount to:<br>IBAN: GR96 0810 0010 0000 0123 4567 890</p>');
       detailsDiv.append(p, btn);
