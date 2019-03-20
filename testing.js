@@ -1,4 +1,17 @@
+function solve() {
+  let url = 'https://api.github.com/users/NikolaKasabov/repos';
 
-let a = [].join(', ');
+  $.get(url, function (data) {
+    console.log(data);
+  });
 
-console.log(typeof a === 'number');
+
+}
+
+setTimeout(() => {
+  console.log(1);
+}, 2000);
+
+setTimeout(() => {
+  console.log(2);
+}, 0);
