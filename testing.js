@@ -1,4 +1,1 @@
-
-let a = [].join(', ');
-
-console.log(typeof a === 'number');
+console.log(typeof (new XMLHttpRequest()));
