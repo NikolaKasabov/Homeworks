@@ -1,7 +1,17 @@
 function attachEvents() {
+  let ulEl = $('ul#phonebook');
   let nameEl = $('input#person');
   let phoneEl = $('input#phone');
-  let baseUrl = 'https://phonebook-ee5cb.firebaseio.com/';
+  // let baseUrl = 'https://phonebook-ee5cb.firebaseio.com/';
+  let baseUrl = 'https://phonebook-nakov.firebaseio.com/phonebook';
+
+  function onDeleteClick(id) {
+    $.ajax({
+      method: 'DELETE',
+      url: baseUrl + '/' + id + '.json',
+      success: onLoadClick
+    });
+  }
 
   function listContacts(contacts) {
     for (const key in contacts) {
@@ -9,11 +19,17 @@ function attachEvents() {
       let phone = contacts[key].phone;
       let id = key;
 
-
+      let li = $(`<li>${person}: ${phone}</li>`);
+      let deleteBtn = $('<button>Delete</button>');
+      deleteBtn.click(() => onDeleteClick(id));
+      li.append(deleteBtn);
+      ulEl.append(li);
     }
   }
 
   function onLoadClick() {
+    ulEl.empty();
+
     $.ajax({
       method: 'GET',
       url: baseUrl + '.json',
@@ -33,13 +49,12 @@ function attachEvents() {
         "Content-Type": "application/json"
       },
       data: `{"person":"${name}","phone":"${phone}"}`,
-      success: data => console.log(data.name),
-      error: err => console.log(err)
+      success: () => {
+        nameEl.val('');
+        phoneEl.val('');
+        onLoadClick();
+      }
     });
-  }
-
-  function onDeleteClick() {
-
   }
 
   $('button#btnLoad').on('click', onLoadClick);
