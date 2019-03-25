@@ -2,7 +2,7 @@ function attachEvents() {
   let ulEl = $('ul#phonebook');
   let nameEl = $('input#person');
   let phoneEl = $('input#phone');
-  // let baseUrl = 'https://phonebook-ee5cb.firebaseio.com/';
+  // let baseUrl = 'https://phonebook-ee5cb.firebaseio.com';
   let baseUrl = 'https://phonebook-nakov.firebaseio.com/phonebook';
 
   function onDeleteClick(id) {
