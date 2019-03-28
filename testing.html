@@ -8,10 +8,21 @@
 
 <body>
   <input type="text" placeholder="url">
-  <button>Click</button>
+  <button onclick="someFunc()">Click</button>
   <div class="container"></div>
 
   <script src="testing.js"></script>
+  <script>
+    // $('button').on('click', someFunc);
+
+    // document.querySelector('button').addEventListener('click', someFunc);
+
+    function someFunc(value){
+      console.log(value);
+      console.log(this);
+      console.log(value.target);
+    }
+  </script>
 </body>
 
 </html>

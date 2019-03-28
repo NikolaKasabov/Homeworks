@@ -1,49 +1,42 @@
-let container = $('div.container');
-let btn = $('button');
-let ol = $('<ol>');
-container.append(ol);
+const baseUrl = 'https://baas.kinvey.com/';
+const appKey = 'kid_rkiE6YvdE';
+const username = 'guest';
+const password = 'guest';
 
-async function onButtonClick() {
-  // let urlGet = 'https://baas.kinvey.com/appdata/kid_rkdp7Q6w4/posts';
-  // let urlLogin = 'https://baas.kinvey.com/user/kid_rkdp7Q6w4/login';
+// fetch(
+//   baseUrl + 'appdata/' + appKey + '/messages',
+//   {
+//     method: 'GET',
+//     headers: {
+//       Authorization: 'Basic ' + btoa(username + ':' + password)
+//     },
+//   }
+// ).then((response) => {
+//   console.log(response.json());
+//   console.log(response);
+// });
 
-  // $.ajax({
-  //   url: urlLogin,
-  //   method: 'POST',
-  //   headers: {
-  //     "Authorization": "Basic " + btoa('kid_rkdp7Q6w4:a719bc1cdfa34e94b0247ff894539b67'),
-  //   },
-  //   data: {
-  //     'username': 'guest',
-  //     'password': 'guest'
-  //   }
-  // }).then(data => console.log(data))
-  //   .catch(error => console.log(error));
 
-  $.ajax({
-    url: 'https://swapi.co/api/people/2',
-    method: 'GET'
-  })
-    //   .then(data => {
-    //   return data;
-    // })
-    .then(data => {
-      $.ajax({
-        url: 'https://swapi.co/api/people/3',
-        method: 'GET'
-      }).then(data2 => {
-        console.log(data2);
-        console.log(data);
-      })
-    })
+// $.ajax({
+//   url: baseUrl + 'appdata/' + appKey + '/messages',
+//   method: 'GET',
+//   headers: {
+//     Authorization: 'Basic ' + btoa(username + ':' + password)
+//   },
+// }).then(data => console.log(data))
+
+class A {
+  m1() {
+    console.log('m1');
+  }
+
+  m2 = 5;
+  
+  constructor() {
+    
+  }
 }
 
-btn.click(onButtonClick);
-
-function resolveAfter2Seconds() {
-  return new Promise(resolve => {
-    setTimeout(() => {
-      resolve('resolved');
-    }, 2000);
-  });
-}
+let a = new A();
+a.m1();
+// a.m2;
