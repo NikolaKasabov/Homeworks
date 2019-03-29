@@ -29,15 +29,15 @@ function attachEvents() {
       let $tr = $('<tr>');
       let $td = $('<td>');
       let $input = $(`<input type="text" value="${country.countryName}">`);
-      let $editBtn = $('<button>Change name</button>').click(ev => onEditClick(ev, currentId));
-      let $deleteBtn = $('<button>Delete</button>').click(() => onDeleteClick(currentId));
+      let $editBtn = $('<button>Change name</button>').click(ev => onEditCountryClick(ev, currentId));
+      let $deleteBtn = $('<button>Delete</button>').click(() => onDeleteCountryClick(currentId));
       $td.append($input, $editBtn, $deleteBtn);
       $tr.append($td);
       $countriesTable.append($tr);
     })
   }
 
-  function onEditClick(ev, id) {
+  function onEditCountryClick(ev, id) {
     showMessage()
     let newCountryName = $(ev.target).prev().val();
     $.ajax({
@@ -53,7 +53,7 @@ function attachEvents() {
     });
   }
 
-  function onDeleteClick(id) {
+  function onDeleteCountryClick(id) {
     showMessage();
     $.ajax({
       method: 'DELETE',
@@ -123,6 +123,7 @@ function attachEvents() {
       let $tr = $('<tr>');
       let $td = $('<td>');
       let $input = $(`<input type="text" value="${town.townName}">`);
+      //////
     });
   }
 
