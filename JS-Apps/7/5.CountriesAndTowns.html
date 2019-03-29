@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="5.CountriesAndTowns.js"></script>
+  <title>Countries & Towns</title>
+  <style>
+    body {
+      text-align: center;
+    }
+
+    section {
+      width: 40%;
+      margin: auto;
+    }
+
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+
+    td,
+    th {
+      border: solid 1px black;
+      padding: 5px
+    }
+
+    button {
+      margin: 2px
+    }
+
+    ul{
+      width: 40%;
+      margin: 20px auto;
+      text-align: left;
+    }
+
+    div{
+      margin: 20px
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <fieldset>
+      <legend><h2>Countries:</h2></legend>
+      <input type="text" class="addCountry" placeholder="country name...">
+      <button class="addCountry">Add country</button>
+      <button class="getCountries">List all countries</button>
+      <table id="countriesTable"></table>
+    </fieldset>
+  </section>
+
+  <section>
+    <fieldset>
+      <legend>
+        <h2>Towns:</h2>
+      </legend>
+      <input type="text" class="countryName" placeholder="country to get towns for...">
+      <button class="getTowns">Get towns</button>
+      <br>
+      <table id="townsTable"></table>
+    </fieldset>
+  </section>
+
+  <div class="message" style="display: none"><h3>Loading...</h3></div>
+
+  <script>attachEvents()</script>
+</body>
+
+</html>
