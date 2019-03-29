@@ -4,7 +4,6 @@ function attachEvents() {
   const $countriesTable = $('#countriesTable');
   const $townsTable = $('#townsTable');
   const $messageDiv = $('div.message');
-  const $townsUl = $('ul.towns');
 
   function onListAllCountriesClick() {
     showMessage();
