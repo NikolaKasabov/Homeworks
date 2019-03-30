@@ -5,6 +5,7 @@ function attachEvents() {
   const $townsTable = $('#townsTable');
   const $messageDiv = $('div.message');
 
+  // get all countries from kinvey.
   function onListAllCountriesClick() {
     showMessage();
     $.ajax({
@@ -18,8 +19,10 @@ function attachEvents() {
     });
   }
 
+  // add click event to 'List all countries' button.
   $('button.getCountries').on('click', onListAllCountriesClick);
 
+  // display all countries.
   function listCountries(data) {
     $countriesTable.empty();
 
@@ -28,7 +31,7 @@ function attachEvents() {
       let $tr = $('<tr>');
       let $td = $('<td>');
       let $input = $(`<input type="text" value="${country.countryName}">`);
-      let $editBtn = $('<button>Change name</button>').click(ev => onEditCountryClick(ev, currentId));
+      let $editBtn = $('<button>Change name</button>').click(ev => onChangeNameClick(ev, currentId));
       let $deleteBtn = $('<button>Delete</button>').click(() => onDeleteCountryClick(currentId));
       $td.append($input, $editBtn, $deleteBtn);
       $tr.append($td);
@@ -36,8 +39,9 @@ function attachEvents() {
     })
   }
 
-  function onEditCountryClick(ev, id) {
-    showMessage()
+  // change current country name.
+  function onChangeNameClick(ev, id) {
+    showMessage();
     let newCountryName = $(ev.target).prev().val();
     $.ajax({
       method: 'PUT',
@@ -52,6 +56,7 @@ function attachEvents() {
     });
   }
 
+  // delete current country
   function onDeleteCountryClick(id) {
     showMessage();
     $.ajax({
@@ -64,6 +69,7 @@ function attachEvents() {
     });
   }
 
+  // add new country to kinvey, in 'countries' collection.
   function onAddCountryClick() {
     const $countryName = $('input.addCountry');
     let countryName = $countryName.val();
@@ -87,8 +93,10 @@ function attachEvents() {
     });
   }
 
+  // add click event to 'Add country' button.
   $('button.addCountry').on('click', onAddCountryClick);
 
+  // get all towns from kinvey.
   function onGetTownsClick() {
     const $currentCountryName = $('input.countryName')
     let currentCountryName = $currentCountryName.val();
@@ -109,8 +117,10 @@ function attachEvents() {
     })
   }
 
+  // add click event to 'Get towns' button.
   $('button.getTowns').on('click', onGetTownsClick);
 
+  // display all towns.
   function listTowns(townsArr) {
     $townsTable.empty();
     if (townsArr.length === 0) {
@@ -126,6 +136,7 @@ function attachEvents() {
     });
   }
 
+  // shows 'Loading...' message for 1.5 seconds
   function showMessage() {
     $messageDiv.show();
     setTimeout(() => {
