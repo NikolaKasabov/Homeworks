@@ -96,7 +96,7 @@ function attachEvents() {
   // add click event to 'Add country' button.
   $('button.addCountry').on('click', onAddCountryClick);
 
-  // get all towns from kinvey.
+  // get all towns for selected country, from kinvey.
   function onGetTownsClick() {
     const $currentCountryName = $('input.countryName')
     let currentCountryName = $currentCountryName.val();
@@ -104,7 +104,7 @@ function attachEvents() {
       return;
     }
 
-    $currentCountryName.val('');
+    // $currentCountryName.val('');
     showMessage();
     $.ajax({
       method: 'GET',
@@ -127,12 +127,53 @@ function attachEvents() {
       return;
     }
 
+    $townsTable.empty();
     townsArr.forEach(town => {
       let currentId = town._id;
       let $tr = $('<tr>');
       let $td = $('<td>');
-      let $input = $(`<input type="text" value="${town.townName}">`);
-      //////
+      let $inputTown = $(`<input type="text" value="${town.townName}">`);
+      let $inputCountry = $(`<input type="text" value="${town.countryName}">`);
+      let $editBtn = $('<button>Edit</button>').click(ev => onEditTownClick(ev,currentId));
+      let $deleteBtn = $('<button>Delete</button>').click(() => onDeleteTownClick(currentId));
+      $td.append($inputTown,$inputCountry, $editBtn, $deleteBtn);
+      $tr.append($td);
+      $townsTable.append($tr);
+    });
+  }
+
+  // send edited town info to kinvey.
+  function onEditTownClick(ev,id) {
+    let newTownName = $(ev.target).prev().prev().val();
+    let newCountryName = $(ev.target).prev().val();
+
+    showMessage();
+    $.ajax({
+      method: 'PUT',
+      url: baseUrl + 'towns/' + id,
+      headers: {
+        Authorization: authString
+      },
+      data: {
+        townName: newTownName,
+        countryName: newCountryName
+      },
+      success: onGetTownsClick,
+      error: err => console.log(err)
+    });
+  }
+
+  // delete selected town from kinvey.
+  function onDeleteTownClick(id) {
+    showMessage();
+    $.ajax({
+      method: 'DELETE',
+      url: baseUrl + 'towns/' + id,
+      headers: {
+        Authorization: authString
+      },
+      success: onGetTownsClick,
+      error: err => console.log(err)
     });
   }
 
