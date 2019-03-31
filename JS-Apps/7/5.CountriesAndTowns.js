@@ -19,7 +19,7 @@ function attachEvents() {
     });
   }
 
-  // add click event to 'List all countries' button.
+  // add click event listener to 'List all countries' button.
   $('button.getCountries').on('click', onListAllCountriesClick);
 
   // display all countries.
@@ -93,7 +93,7 @@ function attachEvents() {
     });
   }
 
-  // add click event to 'Add country' button.
+  // add click event listener to 'Add country' button.
   $('button.addCountry').on('click', onAddCountryClick);
 
   // get all towns for selected country, from kinvey.
@@ -117,7 +117,7 @@ function attachEvents() {
     })
   }
 
-  // add click event to 'Get towns' button.
+  // add click event listener to 'Get towns' button.
   $('button.getTowns').on('click', onGetTownsClick);
 
   // display all towns.
@@ -176,6 +176,39 @@ function attachEvents() {
       error: err => console.log(err)
     });
   }
+
+  // add new town to kinvey, in 'towns' collection
+  function onAddTownClick() {
+    const $townName = $('input.addTown.townName');
+    const $countryName = $('input.addTown.countryName');
+    const townName = $townName.val();
+    const countryName = $countryName.val();
+
+    if (!townName || !countryName) {
+      return;
+    }
+
+    showMessage();
+    $.ajax({
+      method: 'POST',
+      url: baseUrl + 'towns',
+      headers: {
+        Authorization: authString
+      },
+      data: {
+        townName,
+        countryName
+      },
+      success: () => {
+        $townName.val('');
+        $countryName.val('');
+      },
+      error: err => console.log(err)
+    });
+  }
+
+  // add click event listener to 'Add town' button
+  $('button.addTown').on('click', onAddTownClick);
 
   // shows 'Loading...' message for 1.5 seconds
   function showMessage() {
