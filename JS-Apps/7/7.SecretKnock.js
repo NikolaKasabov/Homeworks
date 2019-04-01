@@ -7,7 +7,7 @@ function attachEvents() {
   let message = 'Knock Knock.';
   let answer = '';
 
-  
+  // creates Promise
   function checkForResponsePromise() {
     return $.ajax({
       method: 'GET',
