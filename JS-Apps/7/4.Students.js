@@ -24,6 +24,7 @@ function addStudent() {
 
 // addStudent();
 
+// get students info from kinvey
 function getStudents() {
   $.ajax({
     method: 'GET',
@@ -36,6 +37,7 @@ function getStudents() {
   });
 }
 
+// display students info
 function onGetStudentsSuccess(data) {
   let sortedStudents = data.sort((a, b) => a['ID'] - b['ID']);
 
