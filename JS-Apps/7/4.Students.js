@@ -22,6 +22,7 @@ function addStudent() {
   });
 };
 
+// add student to kinvey 
 // addStudent();
 
 // get students info from kinvey
