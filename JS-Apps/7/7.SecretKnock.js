@@ -25,14 +25,12 @@ function attachEvents() {
     message = data.message;
     answer = data.answer;
 
-    console.log(message);
-
-    if (message !== 'undefined') {
-      $result.append(`<p>${answer}</p>`);      
+    if (message !== undefined) {
+      $result.append(`<p>${message}</p>`);      
     }
 
-    if (answer !== 'undefined') {
-      $result.append(`<p>${message}</p>`);      
+    if (answer !== undefined) {
+      $result.append(`<p>${answer}</p>`);      
     }
   }
 
