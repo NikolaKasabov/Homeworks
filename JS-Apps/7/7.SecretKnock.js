@@ -7,6 +7,7 @@ function attachEvents() {
   let message = 'Knock Knock.';
   let answer = '';
 
+  
   function checkForResponsePromise() {
     return $.ajax({
       method: 'GET',
@@ -37,7 +38,7 @@ function attachEvents() {
 
   async function start() {
     $result.append(`<p>${message}</p>`);
-    
+
     while (message !== undefined) {
       await checkForResponsePromise();
     }
