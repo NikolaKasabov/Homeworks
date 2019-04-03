@@ -4,5 +4,5 @@
 /JS-Advanced/temp
 package.json
 package-lock.json
-# .eslintrc.json
+.eslintrc.json
 
