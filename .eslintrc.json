@@ -1,0 +1,13 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "no-console": "off",
+    "wrap-iife":"off",
+    "func-names":"off",
+    "linebreak-style":"off",
+    "no-undef":"off",
+    "no-unused-vars":"off",
+    "no-use-before-define":"off",
+    "no-underscore-dangle":"off"
+  }
+}
