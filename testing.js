@@ -24,19 +24,3 @@ const password = 'guest';
 //     Authorization: 'Basic ' + btoa(username + ':' + password)
 //   },
 // }).then(data => console.log(data))
-
-class A {
-  m1() {
-    console.log('m1');
-  }
-
-  m2 = 5;
-  
-  constructor() {
-    
-  }
-}
-
-let a = new A();
-a.m1();
-// a.m2;

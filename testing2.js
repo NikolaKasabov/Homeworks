@@ -1,18 +1,5 @@
-function printAfter2Sec() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log('after 2 seconds');
-      resolve();
-    }, 2000);
-  });
-}
+const $div = $('div.container');
+let template = Handlebars.compile('<div>Name: {{name}}</div>');
+Handlebars.registerPartial()
 
-async function solve() {
-  console.log(1);
-
-  await printAfter2Sec();
-
-  console.log(2);
-}
-
-solve();
+$div.html(template({ name: 'Moshe' }));
