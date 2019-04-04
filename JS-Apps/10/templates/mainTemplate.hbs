@@ -1,0 +1,8 @@
+<h1>My contacts</h1>
+<div class="contacts">
+  {{#each contacts}}
+    {{> partialTemplate}}
+  {{else}}
+    <h2>No contacts in database.</h2>
+  {{/each}}
+</div>
