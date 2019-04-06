@@ -1,5 +1,5 @@
 const app = Sammy('#container', function () {
-  this.get('', function () {
+  this.get('#/home', function () {
     this.swap('<h2>Home Page</h2>');
   });
 
@@ -9,6 +9,10 @@ const app = Sammy('#container', function () {
 
   this.get('#/login', function () {
     this.swap('<h2>Login Page</h2>');
+  });
+
+  this.get('.', function () {
+    this.swap('********');
   });
 });
 
