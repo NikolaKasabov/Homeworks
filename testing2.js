@@ -1,18 +1,23 @@
 $(() => {
   const app = Sammy('#container', function () {
-    this.route('get', '#/', function (context) {
+    // use Handlebars
+    this.use('Handlebars', 'hbs');
+
+    // routes
+    this.route('get', '/', function (context) {
       this.swap('<h2>Home Page</h2>');
     });
 
-    this.get('#/about', function (context) {
-      this.swap('<h2>About Page</h2>');
+    this.route('GET', '#/about', function () {
+      this.swap('<h2>About Page without params</h2>');
     });
 
-    this.get('#/about/:productId', function (context) {
+    this.route('GET', '#/about/:productId', function (context) {
+      this.swap(`<h2>About Page with params: ${context.params}</h2>`);
       console.log(context.params);
     });
 
-    this.get('#/login', function (context) {
+    this.route('GET', '#/login', function () {
       this.swap(`<h2>Login Page</h2>
       <form action="#/login" method="post">
       User: <input name="user" type="text">
@@ -21,11 +26,11 @@ $(() => {
     </form>`);
     });
 
-    this.post('#/login', function (context) {
+    this.route('POST', '#/login', function (context) {
       console.log(context.params);
     });
 
-    this.get('.', function () {
+    this.route('GET', '.', function () {
       this.swap('********');
     });
   });
