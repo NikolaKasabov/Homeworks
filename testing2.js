@@ -4,7 +4,7 @@ $(() => {
     this.use('Handlebars', 'hbs');
 
     // routes
-    this.route('get', '/', function (context) {
+    this.route('GET', '/', function (context) {
       this.swap('<h2>Home Page</h2>');
     });
 
@@ -13,8 +13,11 @@ $(() => {
     });
 
     this.route('GET', '#/about/:productId', function (context) {
-      this.swap(`<h2>About Page with params: ${context.params}</h2>`);
-      console.log(context.params);
+      // this.swap(`<h2>About Page with params: ${context.params}</h2>`);
+      this.name = context.params.productId;
+      this.price = 23;
+
+      this.partial('./template.hbs')
     });
 
     this.route('GET', '#/login', function () {
