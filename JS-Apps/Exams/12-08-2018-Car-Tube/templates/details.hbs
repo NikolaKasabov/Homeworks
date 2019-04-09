@@ -1,0 +1,32 @@
+<div id="container">
+
+  {{> navigation}}
+
+  <div class="listing-details">
+    <div class="my-listing-details">
+      <p id="auto-title">{{carInfoObj.title}}</p>
+      <img src="{{carInfoObj.imageUrl}}">
+      <div class="listing-props">
+        <h2>Brand: {{carInfoObj.brand}}</h2>
+        <h3>Model: {{carInfoObj.model}}</h3>
+        <h3>Year: {{carInfoObj.year}}</h3>
+        <h3>Fuel: {{carInfoObj.fuel}}</h3>
+        <h3>Price: {{carInfoObj.price}}$</h3>
+      </div>
+
+      {{#if isAuthor}}
+      <div class="listings-buttons">
+        <a href="#/edit/:{{carInfoObj._id}}" class="button-list">Edit</a>
+        <a href="#/delete/:{{carInfoObj._id}}" class="button-list">Delete</a>
+      </div>
+      {{/if}}
+
+      <p id="description-title">Description:</p>
+      <p id="description-para">{{carInfoObj.description}}</p>
+
+    </div>
+  </div>
+
+  {{> footer}}
+
+</div>
