@@ -4,7 +4,7 @@ $(() => {
     this.use('Handlebars', 'hbs');
 
     // routes
-    this.route('GET', '/', function (context) {
+    this.route('GET', '#/home', function (context) {
       this.swap('<h2>Home Page</h2>');
     });
 
@@ -38,5 +38,5 @@ $(() => {
     });
   });
 
-  app.run();
+  app.run('#/home');
 });
