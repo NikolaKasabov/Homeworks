@@ -11,10 +11,10 @@ let requester = (() => {
   }
 
   // Creates request object to kinvey
-  function makeRequest(method, module, endpoint, auth) {
+  function makeRequest(method, firstPart, endpoint, auth) {
     return req = {
       method,
-      url: kinveyBaseUrl + module + '/' + kinveyAppKey + '/' + endpoint,
+      url: kinveyBaseUrl + firstPart + '/' + kinveyAppKey + '/' + endpoint,
       headers: {
         'Authorization': makeAuth(auth)
       }
@@ -22,27 +22,27 @@ let requester = (() => {
   }
 
   // Function to return GET promise
-  function get(module, endpoint, auth) {
-    return $.ajax(makeRequest('GET', module, endpoint, auth));
+  function get(firstPart, endpoint, auth) {
+    return $.ajax(makeRequest('GET', firstPart, endpoint, auth));
   }
 
   // Function to return POST promise
-  function post(module, endpoint, auth, data) {
-    let req = makeRequest('POST', module, endpoint, auth);
+  function post(firstPart, endpoint, auth, data) {
+    let req = makeRequest('POST', firstPart, endpoint, auth);
     req.data = data;
     return $.ajax(req);
   }
 
   // Function to return PUT promise
-  function update(module, endpoint, auth, data) {
-    let req = makeRequest('PUT', module, endpoint, auth);
+  function update(firstPart, endpoint, auth, data) {
+    let req = makeRequest('PUT', firstPart, endpoint, auth);
     req.data = data;
     return $.ajax(req);
   }
 
   // Function to return DELETE promise
-  function remove(module, endpoint, auth) {
-    return $.ajax(makeRequest('DELETE', module, endpoint, auth));
+  function remove(firstPart, endpoint, auth) {
+    return $.ajax(makeRequest('DELETE', firstPart, endpoint, auth));
   }
 
   return {
