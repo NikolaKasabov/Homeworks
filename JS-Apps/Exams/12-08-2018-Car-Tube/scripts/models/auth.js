@@ -1,4 +1,5 @@
 let auth = (() => {
+  // save user info to session storage
   function saveSession(userInfo) {
     let userAuth = userInfo._kmd.authtoken;
     sessionStorage.setItem('authtoken', userAuth);
@@ -55,7 +56,7 @@ let auth = (() => {
     }
   }
 
-  // show error messages
+  // show error messages and hide 'Loading...' AJAX message
   function showError(message) {
     let errorBox = $('#errorBox');
     errorBox.html(`<span>${message}</span>`);
