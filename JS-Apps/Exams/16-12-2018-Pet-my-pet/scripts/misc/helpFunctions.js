@@ -22,9 +22,11 @@ let helpFunctions = (() => {
   // add 1 like to pet with _id=petId
   function addLike(petId) {
     auth.showLoading();
+    // get pet data
     requester.get('appdata', `pets/${petId}`, 'kinvey')
       .then(function (petData) {
         petData.likes = Number(petData.likes) + 1;
+        // post updated pet data to kinvey
         requester.update('appdata', `pets/${petId}`, 'kinvey', JSON.parse(JSON.stringify(petData)))
           .then(function () {
             auth.hideLoading();
