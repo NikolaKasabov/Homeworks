@@ -1,0 +1,32 @@
+{{> header}}
+
+<section id="allSongsView">
+  <div class="background-spotify">
+    <div class="song-container">
+      <h1>All Songs</h1>
+
+      <a href="#/addSong">
+        <button type="button" class="btn-lg btn-block new-song-btn">Add a new song</button>
+      </a>
+
+      {{#each allSongs}}
+      <div class="song">
+        <h5>Title: {{this.title}}</h5>
+        <h5>Artist: {{this.artist}}</h5>
+        <img class="cover" src="{{this.image}}" />
+        {{#if isAuthor}}
+        <p>Likes: {{this.likes}}; Listened {{this.listened}} times</p>
+        <a href="#"><button type="button" class="btn btn-danger mt-4" data-id="{{this._id}}" data-type="remove">Remove</button></a>
+        <a href="#"><button type="button" class="btn btn-success mt-4" data-id="{{this._id}}" data-type="listen">Listen</button></a>
+        {{else}}
+        <p>Likes: {{this.likes}}</p>
+        <a href="#"><button type="button" class="btn btn-primary mt-4" data-id="{{this._id}}" data-type="like">Like</button></a>
+        {{/if}}
+      </div>
+      {{/each}}
+
+    </div>
+  </div>
+</section>
+
+{{> footer}}
