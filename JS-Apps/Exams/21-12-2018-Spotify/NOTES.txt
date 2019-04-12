@@ -19,4 +19,4 @@ this.loadPartials({
 
 ------------------------------
 misc:
-  "#/likeSong/:{{this._id}}" - like button
+  
