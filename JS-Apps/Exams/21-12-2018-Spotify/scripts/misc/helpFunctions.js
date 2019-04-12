@@ -73,6 +73,7 @@ let helpFunctions = (() => {
       .catch(err => auth.showError(err.responseJSON.description));
   }
 
+  // event handler for 'Like' button click
   function onLikeClick(ev, app) {
     ev.preventDefault();
     ev.stopPropagation();
@@ -80,6 +81,7 @@ let helpFunctions = (() => {
     addLike(songId, app);
   }
 
+  // event handler for 'Listen' button click
   function onListenClick(ev, app) {
     ev.preventDefault();
     ev.stopPropagation();
@@ -87,6 +89,7 @@ let helpFunctions = (() => {
     addListen(songId, app);
   }
 
+  // event handler for 'Remove' button click
   function onRemoveClick(ev, app) {
     ev.preventDefault();
     ev.stopPropagation();
