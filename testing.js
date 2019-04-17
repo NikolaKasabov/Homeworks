@@ -1,6 +1,6 @@
 const baseUrl = 'https://baas.kinvey.com/';
 const appKey = 'kid_rkiE6YvdE';
-const username = 'guest';
+let username = 'guest';
 const password = 'guest';
 
 // fetch(
