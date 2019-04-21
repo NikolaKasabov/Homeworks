@@ -1,0 +1,16 @@
+{{> header}}
+
+<main id="site-content">
+
+  <section class="detailsOtherPet">
+    <h3>{{pet.name}}</h3>
+    <p>Pet counter: {{pet.likes}} <a href="#"><button class="button" data-id="{{pet._id}}" data-type="like"><i class="fas fa-heart"></i>
+          Pet</button></a>
+    </p>
+    <p class="img"><img src="{{pet.imageURL}}"></p>
+    <p class="description">{{pet.description}}</p>
+  </section>
+
+</main>
+
+{{> footer}}

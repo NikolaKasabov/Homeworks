@@ -1,0 +1,28 @@
+{{> header}}
+
+<main id="site-content">
+
+  <section class="my-pets">
+    <h1>My Pets</h1>
+    <ul class="my-pets-list">
+
+      {{#each myPets}}
+      <section class="myPet">
+        <h3>Name: {{this.name}}</h3>
+        <p>Category: {{this.category}}</p>
+        <p class="img"><img src="{{this.imageURL}}"></p>
+        <p class="description">{{this.description}}</p>
+        <div class="pet-info">
+          <a href="#/delete/{{this._id}}"><button class="button">Delete</button></a>
+          <a href="#/edit/{{this._id}}"><button class="button">Edit</button></a>
+          <i class="fas fa-heart"></i> <span>{{this.likes}}</span>
+        </div>
+      </section>
+      {{/each}}
+
+    </ul>
+  </section>
+
+</main>
+
+{{> footer}}
