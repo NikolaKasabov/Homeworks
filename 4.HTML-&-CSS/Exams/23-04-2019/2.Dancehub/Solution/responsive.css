@@ -1,0 +1,26 @@
+@media (max-width: 800px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav li {
+    text-align: center;
+  }
+
+  nav p {
+    padding-bottom: 1rem;
+  }
+
+  .trainings{
+    flex-direction: column;
+  }
+
+  .trainings div{
+    width: 51%;
+  }
+}
