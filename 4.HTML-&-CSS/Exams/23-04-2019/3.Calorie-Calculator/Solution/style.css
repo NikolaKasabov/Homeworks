@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans";
+}
+
+article {
+  width: 60%;
+  height: 75vh;
+  display: flex;
+  border: 2px solid #888686;
+}
+
+.media,
+.content {
+  width: 50%;
+}
+
+.media {
+  background: url("../Requirements-and-Resources/image/image.png") top / 100%
+    no-repeat;
+}
+
+.content {
+  padding: 2rem 1rem;
+  background-color: #f6f7f8;
+}
+
+.content header {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #4c4c4c;
+}
+
+.content section {
+  padding-top: 2rem;
+}
+
+.units {
+  display: flex;
+}
+
+.units p {
+  width: 50%;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+}
+
+.units p:nth-of-type(1) {
+  background-color: #efe562;
+}
+.units p:nth-of-type(2) {
+  background-color: #e0e0df;
+}
+
+.gender-and-age {
+  display: flex;
+}
+
+select,
+input {
+  font-style: italic;
+  color: #777;
+}
