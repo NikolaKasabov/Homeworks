@@ -27,4 +27,20 @@
   .instructors-pic {
     display: block;
   }
+
+  .classes li {
+    width: 50%;
+  }
+
+  .getInTouch {
+    display: block;
+  }
+
+  .site-footer .wrapper {
+    flex-wrap: wrap;
+  }
+
+  .site-footer .about {
+    flex: 0 0 100%;
+  }
 }
