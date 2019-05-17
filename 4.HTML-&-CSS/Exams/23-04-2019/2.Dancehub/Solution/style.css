@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|PT+Serif:400,400i,700,700i");
-@import url('https://fonts.googleapis.com/css?family=Yellowtail');
+@import url("https://fonts.googleapis.com/css?family=Yellowtail");
 
 * {
   margin: 0;
@@ -14,7 +14,7 @@ body {
   margin: 0 auto;
 }
 
-li{
+li {
   list-style: none;
 }
 
@@ -54,7 +54,9 @@ nav ul li a {
 }
 
 header div {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("../Requirements-and-Resources/image/dancing-girl.png") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+    url("../Requirements-and-Resources/image/dancing-girl.png") no-repeat center
+      center;
   background-size: cover;
   color: white;
   padding: 9em 0 9em 3em;
@@ -70,43 +72,43 @@ header div i {
   color: #afbaff;
 }
 
-.trainings{
-    background: #F6F6F6;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 3em;
+.trainings {
+  background: #f6f6f6;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3em;
 }
 
-.trainings div{
-    width: 20%;
-    margin: 0 auto;
-    color: #645c5c;
-    text-align: center;
-    padding-bottom: 3rem;
+.trainings div {
+  width: 20%;
+  margin: 0 auto;
+  color: #645c5c;
+  text-align: center;
+  padding-bottom: 3rem;
 }
 
-.trainings div img{
-    width: 120px;
-    height: 120px;
-    background: white;
-    border: 2px dotted #afbaff;
-    border-radius: 50%;    
+.trainings div img {
+  width: 120px;
+  height: 120px;
+  background: white;
+  border: 2px dotted #afbaff;
+  border-radius: 50%;
 }
 
-.trainings div h3{
-    color: #afbaff;
-    padding: 1em 0;
+.trainings div h3 {
+  color: #afbaff;
+  padding: 1em 0;
 }
 
 .classes,
-.instructors{
+.instructors {
   width: 85%;
   margin: 0 auto;
   padding: 6em 0;
   text-align: center;
 }
 
-hr{
+hr {
   width: 5%;
   margin: 0 auto;
   border: none;
@@ -119,64 +121,63 @@ hr{
   padding: 2rem 0;
   font-size: 18px;
   width: 80%;
-  color: #8F8F8F;
+  color: #8f8f8f;
   margin: 0 auto;
 }
 
-h2{
+h2 {
   font-size: 36px;
   text-align: center;
 }
 
-.instructors-pic{
-  display: flex;  
+.instructors-pic {
+  display: flex;
   flex-wrap: wrap;
   padding: 0;
   justify-content: space-between;
 }
 
-.instructors-pic div{  
+.instructors-pic div {
   width: 20rem;
-	display: inline-block;
-	background: #FFF;
-	border: 0.4rem solid #000;
-	padding: 1rem;
-	vertical-align: middle;
-	margin: 0.5rem;
+  display: inline-block;
+  background: #fff;
+  border: 0.4rem solid #000;
+  padding: 1rem;
+  vertical-align: middle;
+  margin: 0.5rem;
 }
 
-.instructors-pic li{  
-  padding-bottom: 1.5rem;  
+.instructors-pic li {
+  padding-bottom: 1.5rem;
 }
 
-.instructors-pic img{  
+.instructors-pic img {
   display: block;
-	width: 100%;
-	height: auto;
+  width: 100%;
+  height: auto;
 }
 
-.instructors-pic h3{
+.instructors-pic h3 {
   padding: 2rem 0 0.2rem 0;
   color: #645c5c;
 }
 
-.instructors-pic p{
+.instructors-pic p {
   color: #afbaff;
   font-weight: bold;
 }
 
-
-.classes{
+.classes {
   background: rgb(87, 90, 99);
   color: white;
   width: 100%;
 }
 
-.classes h2{
+.classes h2 {
   padding-bottom: 2rem;
 }
 
-.classes ul{
+.classes ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -185,121 +186,119 @@ h2{
   margin: 0 auto;
 }
 
-.classes li{
+.classes li {
   width: 30%;
   display: flex;
   text-align: left;
   padding-bottom: 1.3rem;
 }
 
-.classes li > p{
-  font-family: 'Yellowtail', serif;
+.classes li > p {
+  font-family: "Yellowtail", serif;
   color: #afbaff;
   font-size: 66px;
   font-weight: bolder;
   padding-right: 1.6rem;
 }
 
-.classes li div{
+.classes li div {
   align-self: flex-end;
 }
 
-.classes li div h3{
+.classes li div h3 {
   font-weight: bold;
   letter-spacing: 0.02rem;
   font-size: 26px;
   align-self: flex-start;
 }
 
-.classes li div p{
-  color: #BDBDBD;
+.classes li div p {
+  color: #bdbdbd;
   font-size: 18px;
 }
 
 /*get in touch*/
 
-.getInTouch{
-  display: flex;  
-  align-items: center; 
+.getInTouch {
+  display: flex;
+  align-items: center;
   width: 95%;
   margin: 0 auto;
   overflow: hidden;
   justify-content: space-evenly;
- 
-  
 }
 
-.form{
-  flex: 1 1 45%;  
+.form {
+  flex: 1 1 45%;
 }
 
-.map{
+.map {
   flex: 1 1 45%;
   overflow: hidden;
-  position: relative;  
+  position: relative;
 }
 
-.map:after{
+.map:after {
   display: block;
-  content: '';
+  content: "";
   padding-top: 70%;
 }
 
-.map img{
+.map img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
   width: 100%;
   height: auto;
   border: 3px solid black;
   padding: 1rem;
 }
 
-.form{
+.form {
   padding-top: 2.8rem;
 }
 
-.getInTouch hr{
+.getInTouch hr {
   width: 10%;
 }
 
-.getInTouch h2{
+.getInTouch h2 {
   padding-bottom: 1.5rem;
 }
 
-.getInTouch form{
+.getInTouch form {
   display: block;
   width: 90%;
-  margin: 0 auto; 
+  margin: 0 auto;
   text-align: center;
 }
 
-.getInTouch form input{
-  width: 60%;  
+.getInTouch form input {
+  width: 60%;
   height: 3.2rem;
   border-radius: 0.4rem;
   padding-left: 1rem;
   font-size: 16px;
   margin-bottom: 0.7rem;
   outline: none;
-  border: 1px solid #BDBDBD;
+  border: 1px solid #bdbdbd;
 }
 
-.getInTouch textarea{
+.getInTouch textarea {
   border-radius: 0.4rem;
   padding-left: 1rem;
   font-size: 17px;
   margin-bottom: 0.7rem;
   outline: none;
-  border: 1px solid #BDBDBD;
+  border: 1px solid #bdbdbd;
   padding-top: 0.5rem;
   box-sizing: border-box;
   width: 60%;
   font-family: PT Sans, sans-serif;
 }
 
-.getInTouch button{
+.getInTouch button {
   padding: 1rem 3.5rem;
   color: white;
   font-size: 20px;
@@ -310,94 +309,93 @@ h2{
   margin-bottom: 2rem;
 }
 
-
 /*footer*/
 
-.site-footer{
+.site-footer {
   background: #272727;
-  color: white; 
+  color: white;
 }
 
 .site-footer .wrapper {
   display: flex;
   justify-content: space-between;
-	padding: 1.5rem;
+  padding: 1.5rem;
   width: 80%;
   margin: 0 auto;
 }
 
 .site-footer ul {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .site-footer li {
-	display: block;
-	list-style: none outside;
+  display: block;
+  list-style: none outside;
 }
 
 .site-footer .about {
-	flex: 0 0 30%;
+  flex: 0 0 30%;
 }
 
-.about header > p{
+.about header > p {
   font-size: 12px;
   padding-bottom: 1.5rem;
-} 
+}
 
-.about hr{  
+.about hr {
   width: 100%;
   height: 1px;
 }
 
-.about > p{
+.about > p {
   padding-bottom: 1.2rem;
 }
 
 .site-footer .sitemap {
-	flex: 0 0 20%;
+  flex: 0 0 20%;
 }
 
 .site-footer .contacts {
-	flex: 0 0 30%;
+  flex: 0 0 30%;
 }
 
 .contacts h3,
-.sitemap h3{
+.sitemap h3 {
   padding-bottom: 2.2rem;
 }
 
 .site-footer .sitemap ul {
-	display: flex;
-	flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .site-footer .sitemap li {
-	display: block;
-	list-style: none outside;
-	flex: 0 0 60%;
+  display: block;
+  list-style: none outside;
+  flex: 0 0 60%;
 }
 
 .site-footer .sitemap li a {
-	text-decoration: none;
-	color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .site-footer .contacts li {
-	display: block;
-	list-style: none outside;
-	flex: 0 0 50%;	
-	line-height: 1.2;
-	position: relative;
-	padding-left: 2rem;
-	padding-bottom: 0.5rem;
+  display: block;
+  list-style: none outside;
+  flex: 0 0 50%;
+  line-height: 1.2;
+  position: relative;
+  padding-left: 2rem;
+  padding-bottom: 0.5rem;
 }
 
 .site-footer .contacts li i {
-	display: inline-block;
-	position: absolute;
-	top: 0.1rem; left: 0;
-	width: 1.7rem;
-	text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 0.1rem;
+  left: 0;
+  width: 1.7rem;
+  text-align: center;
 }
-
