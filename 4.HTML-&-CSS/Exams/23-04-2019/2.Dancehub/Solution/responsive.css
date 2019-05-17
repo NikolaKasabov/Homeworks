@@ -16,11 +16,15 @@
     padding-bottom: 1rem;
   }
 
-  .trainings{
+  .trainings {
     flex-direction: column;
   }
 
-  .trainings div{
+  .trainings div {
     width: 51%;
+  }
+
+  .instructors-pic {
+    display: block;
   }
 }
