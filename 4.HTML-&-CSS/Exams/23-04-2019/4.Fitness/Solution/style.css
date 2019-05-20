@@ -32,6 +32,13 @@ header .lower {
   background: url("../Requirements-and-Resources/image/fitness-main.jpg") center /
     100% no-repeat;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  align-self: flex-end;
 }
 
 nav ul {
@@ -39,10 +46,16 @@ nav ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  margin: 0 0 0 auto;
   font-weight: bold;
 }
 
-nav ul li {
+nav a {
+  display: block;
   padding: 2rem 4rem 0 0;
+  color: white;
+  text-decoration: none;
+}
+
+.lower h1 {
+  font: bold 6rem "PT Serif", serif;
 }
