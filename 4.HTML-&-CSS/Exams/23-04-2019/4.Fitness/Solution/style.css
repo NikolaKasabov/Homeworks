@@ -57,6 +57,7 @@ nav a {
 }
 
 .lower h1 {
-  font: bold 5rem "PT Serif", serif;
-  letter-spacing: 0.1em;
+  padding-top: 10rem;
+  font: bold 5.5rem "PT Serif", serif;
+  letter-spacing: 0.20em;
 }
