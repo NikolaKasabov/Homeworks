@@ -106,13 +106,15 @@ nav a {
   border-bottom: 3px solid #d01919;
 }
 
-.welcome > section {
+.welcome > section,
+.coaches > section {
   display: flex;
   justify-content: space-evenly;
   padding-top: 5rem;
 }
 
-.welcome section section {
+.welcome section section,
+.coaches section section {
   width: 25%;
   font-size: 1.5rem;
   text-align: center;
@@ -130,4 +132,39 @@ nav a {
 .welcome h3 {
   letter-spacing: 0.1em;
   color: #d01919;
+}
+
+.coaches {
+  background-color: #efefef;
+}
+
+.coaches > section {
+  justify-content: space-around;
+}
+
+.coaches img {
+  border-radius: 0.3rem;
+  padding-bottom: 1rem;
+}
+
+.coaches p:nth-child(3) {
+  color: #d01919;
+  padding-bottom: 1rem;
+}
+
+.coaches p:last-child {
+  color: #ab9393;
+  width: 70%;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 2rem;
+  background-color: #d01919;
+}
+
+footer p {
+  /* width: auto; */
+  margin: 0 auto;
+  display: block;
 }
