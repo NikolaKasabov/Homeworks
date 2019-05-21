@@ -27,7 +27,7 @@ header .upper p {
   padding: 1.3rem 4rem;
 }
 
-i:not(:nth-child(4)) {
+header .upper a:not(:last-child) i{
   padding-right: 1rem;
 }
 
@@ -58,6 +58,7 @@ nav a {
   color: white;
   font-weight: bold;
   text-decoration: none;
+  text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.4);
 }
 
 .lower h1 {
@@ -159,12 +160,11 @@ nav a {
 }
 
 footer {
-  padding: 2rem;
+  padding: 0.8rem;
   background-color: #d01919;
 }
 
 footer p {
-  /* width: auto; */
-  margin: 0 auto;
-  display: block;
+  text-align: center;
+  font-size: 1.4rem;
 }
