@@ -11,10 +11,6 @@ html {
   font: 16px/1.5 "PT Sans", sans-serif;
 }
 
-body {
-  height: 300vh;
-}
-
 header .upper {
   display: flex;
   justify-content: space-between;
@@ -88,14 +84,20 @@ nav a {
   color: white;
 }
 
-.welcome h2 {
+.welcome {
+  padding-bottom: 4rem;
+}
+
+.welcome h2,
+.coaches h2 {
   padding-top: 4rem;
   font-size: 3rem;
   letter-spacing: 0.1em;
   text-align: center;
 }
 
-.welcome h2:after {
+.welcome h2:after,
+.coaches h2:after {
   content: "";
   display: block;
   margin: 0 auto;
@@ -106,12 +108,26 @@ nav a {
 
 .welcome > section {
   display: flex;
+  justify-content: space-evenly;
+  padding-top: 5rem;
 }
 
-.welcome section section{
-  
+.welcome section section {
+  width: 25%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.welcome i {
+  font-size: 4rem;
+  padding-bottom: 2rem;
 }
 
 .fa-dumbbell {
   transform: rotate(-45deg);
+}
+
+.welcome h3 {
+  letter-spacing: 0.1em;
+  color: #d01919;
 }
