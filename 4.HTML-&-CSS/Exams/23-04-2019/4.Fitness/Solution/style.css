@@ -11,6 +11,10 @@ html {
   font: 16px/1.5 "PT Sans", sans-serif;
 }
 
+body {
+  height: 300vh;
+}
+
 header .upper {
   display: flex;
   justify-content: space-between;
@@ -82,4 +86,32 @@ nav a {
   border-radius: 0.2rem;
   background-color: #d01919;
   color: white;
+}
+
+.welcome h2 {
+  padding-top: 4rem;
+  font-size: 3rem;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.welcome h2:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  padding-top: 2rem;
+  width: 3%;
+  border-bottom: 3px solid #d01919;
+}
+
+.welcome > section {
+  display: flex;
+}
+
+.welcome section section{
+  
+}
+
+.fa-dumbbell {
+  transform: rotate(-45deg);
 }
