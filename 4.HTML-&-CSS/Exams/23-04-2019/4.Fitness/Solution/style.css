@@ -19,8 +19,12 @@ header .upper {
   color: white;
 }
 
+header i {
+  color: white;
+}
+
 header .upper p {
-  padding: 1rem 4rem;
+  padding: 1.3rem 4rem;
 }
 
 i:not(:nth-child(4)) {
@@ -46,18 +50,36 @@ nav ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  font-weight: bold;
 }
 
 nav a {
   display: block;
   padding: 2rem 4rem 0 0;
   color: white;
+  font-weight: bold;
   text-decoration: none;
 }
 
 .lower h1 {
   padding-top: 10rem;
   font: bold 5.5rem "PT Serif", serif;
-  letter-spacing: 0.20em;
+  letter-spacing: 0.2em;
+}
+
+.lower p {
+  width: 36vw;
+  padding-top: 3rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.lower button {
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: #d01919;
+  color: white;
 }
