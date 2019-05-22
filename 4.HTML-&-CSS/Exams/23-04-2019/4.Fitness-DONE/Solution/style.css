@@ -33,8 +33,8 @@ header .upper a:not(:last-child) i{
 
 header .lower {
   height: 80vh;
-  background: url("../Requirements-and-Resources/image/fitness-main.jpg") center /
-    100% no-repeat;
+  /* background: url("../Requirements-and-Resources/image/fitness-main.jpg") center / 100% no-repeat; */
+  background: url("../Requirements-and-Resources/image/fitness-main.jpg") center / cover no-repeat;
   color: white;
   display: flex;
   flex-direction: column;
