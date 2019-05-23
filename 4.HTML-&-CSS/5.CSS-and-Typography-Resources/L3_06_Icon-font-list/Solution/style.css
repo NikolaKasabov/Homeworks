@@ -1,0 +1,13 @@
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+
+html {
+  font: 16px/1.5 Verdana, sans-serif;
+}
+
+body {
+  padding: 3rem;
+}
+
+ul {
+  list-style: none;
+}
