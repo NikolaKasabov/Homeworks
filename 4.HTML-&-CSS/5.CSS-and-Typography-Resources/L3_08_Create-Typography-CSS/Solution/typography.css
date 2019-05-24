@@ -1,9 +1,14 @@
 html {
-  font: 16px/1.5 "Helvetica", sans-serif;
+  font: 16px/1.5 Helvetica, sans-serif;
 }
 
+body {
+  padding: 3rem;
+}
+
+/* table start */
 table {
-  width: 100rem;
+  width: 100%;
   margin: 5rem auto;
   border-collapse: collapse;
   font-size: 1.2rem;
@@ -39,3 +44,4 @@ body table tbody tr:hover td {
 tbody tr:hover td {
   border: 1px solid rgb(0, 0, 0);
 }
+/* table end */
