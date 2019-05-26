@@ -27,8 +27,8 @@ article {
 }
 
 .media {
-  background: url("../Requirements-and-Resources/image/image.png") top / 100%
-    no-repeat;
+  /* background: url("../Requirements-and-Resources/image/image.png") top / 100% no-repeat; */
+  background: url("../Requirements-and-Resources/image/image.png") center / cover no-repeat;
 }
 
 .content {
