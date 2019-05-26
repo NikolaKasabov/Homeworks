@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Courgette&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font: 18px/1.5 Courgette, sans-serif;
+}
+
+header {
+  width: 25vw;
+  margin: 5vh auto;
+}
+
+header:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header h1 {
+  font-size: 4rem;
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+
+header p {
+  float: right;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: #cb2027;
+}
+
+main {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+main > section {
+  width: 25vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image {
+  height: 30vh;
+  width: 25vw;
+  border-radius: 10px 10px 0 0;
+}
+
+section:nth-child(1) .image {
+  background: url("../Requirements-and-Resources/image/image1.jpg") center /
+    cover no-repeat;
+}
+
+section:nth-child(2) .image {
+  background: url("../Requirements-and-Resources/image/image2.jpg") center /
+    cover no-repeat;
+}
+
+section:nth-child(3) .image {
+  background: url("../Requirements-and-Resources/image/image3.jpg") center /
+    cover no-repeat;
+}
+
+hr {
+  border:none;
+  border-bottom: 1px solid #cb2027;
+  width: 90%;
+  margin:0 auto;
+}
+
+section p:nth-of-type(1){
+  width: 90%;
+  text-align: center;
+}
+
+i{
+  color: #cb2027;
+  padding-left: 0.5rem;
+  vertical-align: middle;
+}
