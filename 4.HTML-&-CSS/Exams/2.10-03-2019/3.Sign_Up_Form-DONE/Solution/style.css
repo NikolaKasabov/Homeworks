@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font: 16px/1.5 Source Sans Pro, sans-serif;
+}
+
+body {
+  background-color: #ebf0f0;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 30vw;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin: 0;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+hr {
+  margin: 0;
+  border: none;
+  border-bottom: 4px solid #007acc;
+}
+
+label {
+  display: block;
+  padding: 1.5rem 0 0.5rem 0;
+  font-size: 1.4rem;
+  position: relative;
+  left: -10px;
+  color: #ae9797;
+}
+
+p {
+  position: relative;
+}
+
+i {
+  position: absolute;
+  top: 0.8rem;
+  left: 1rem;
+  padding-right: 0.5rem;
+  border-right: 2px solid #5c5757;
+  font-size: 1.4rem;
+  color: #5c5757;
+}
+
+input {
+  width: 100%;
+  height: 3rem;
+  padding-left: 3.5rem;
+  border: 1px solid #c4dfe9;
+  border-radius: 6px;
+  font-size: 1.1rem;
+}
+
+span:nth-child(1) {
+  color: red;
+}
+
+span:nth-child(2) {
+  font-size: 1rem;
+  color: rgb(153, 184, 212);
+}
+
+button {
+  width: 100%;
+  height: 3.5rem;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  background-color: #007acc;
+  color: #FFF;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
