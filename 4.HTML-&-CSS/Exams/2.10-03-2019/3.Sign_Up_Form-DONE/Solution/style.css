@@ -72,7 +72,7 @@ input {
 }
 
 span:nth-child(1) {
-  color: red;
+  color: #f00;
 }
 
 span:nth-child(2) {
@@ -86,8 +86,9 @@ button {
   margin-top: 2rem;
   font-size: 1.7rem;
   background-color: #007acc;
-  color: #FFF;
+  color: #fff;
   border: none;
   border-radius: 6px;
   outline: none;
+  cursor: pointer;
 }
