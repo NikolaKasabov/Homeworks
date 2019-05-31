@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font: 18px/1.5 Verdana, sans-serif;
+}
+
+body,
+table,
+form,
+select,
+option,
+input,
+textarea {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-bottom: 0.5em;
+}
+
+p,
+ul,
+ol {
+  padding-bottom: 1.5em;
+}
+
+ul,
+ol {
+  padding-left: 2em;
+}
+
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+ol > li > ol > li {
+  list-style-type: lower-roman;
+}
+
+blockquote {
+  padding: 1rem;
+}
+
+blockquote .author {
+  font-style: italic;
+  text-align: right;
+  opacity: 0.5;
+}
