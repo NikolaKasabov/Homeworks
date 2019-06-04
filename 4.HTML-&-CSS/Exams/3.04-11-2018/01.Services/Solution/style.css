@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font: 20px/1.5 Open Sans, sans-serif;
+}
+
+.site {
+  width: 69%;
+  margin: 2rem auto 0 auto;
+}
+
+header,
+header h1 {
+  padding-bottom: 1rem;
+}
+
+header h1:after {
+  display: block;
+  content: "";
+  border-top: 3px solid #34b1c4;
+  width: 6rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  width: 31.5%;
+  border: 1px solid #999;
+  text-align: center;
+}
+
+section h2,
+section p {
+  width: 100%;
+  padding: 0.5rem;
+  border-bottom: 1px dotted #999;
+}
+
+section p:last-child {
+  padding: 2rem 0 1rem 0;
+  border: none;
+}
+
+section button {
+  padding: 0.6rem 2rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #008cba;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.left h2:first-child,
+.right h2:first-child {
+  color: #fff;
+  background-color: #333333;
+}
+
+.middle h2:first-child {
+  color: #fff;
+  background-color: #1996a9;
+}
+
+section h2:nth-child(2) {
+  background-color: #f6f6f6;
+}
+
+section p:first-of-type {
+  font-size: 0.7rem;
+  color: #777777;
+}
