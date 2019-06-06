@@ -91,10 +91,27 @@ main .middle {
 main .middle h2 {
   width: 60%;
   margin: 0 auto;
+  padding-bottom: 3rem;
   text-transform: uppercase;
   font-size: 2rem;
 }
 
 main .middle p {
-  width: 60%;
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+main .middle button {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  color: #ff7f50;
+  border: 1px solid #fff;
+}
+
+main .middle button:hover {
+  background-color: #ff7f50;
+  color: #fff;
 }
