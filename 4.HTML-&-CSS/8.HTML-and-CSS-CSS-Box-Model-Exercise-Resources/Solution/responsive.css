@@ -1,0 +1,9 @@
+@media (min-width: 1800px) {
+  html {
+    font-size: 22px;
+  }
+
+  header nav {
+    padding-left: 33rem;
+  }
+}

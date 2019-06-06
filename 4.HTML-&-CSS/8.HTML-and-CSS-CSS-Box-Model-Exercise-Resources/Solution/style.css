@@ -16,8 +16,14 @@ body {
   width: 100vw;
 }
 
+header {
+  background-color: #F1F5F8;
+  padding-bottom: 2rem;
+}
+
 header .site-header {
   display: inline-block;
+  padding-left: 1rem;
   font-family: Pacifico;
   font-style: italic;
   font-size: 3rem;
@@ -26,7 +32,7 @@ header .site-header {
 
 header nav {
   display: inline-block;
-  padding-left: 65rem;
+  padding-left: 32rem;
 }
 
 header li {
