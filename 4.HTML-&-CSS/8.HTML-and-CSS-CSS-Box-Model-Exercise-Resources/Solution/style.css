@@ -12,6 +12,12 @@ html {
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3 {
+  font-family: PT Serif;
+}
+
 header {
   background-color: #f1f5f8;
   padding-bottom: 2rem;
@@ -64,7 +70,6 @@ main .upper h1 {
   width: 50%;
   margin: 0 auto;
   font-size: 3.2rem;
-  font-family: PT Serif;
   letter-spacing: 2px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
 }
@@ -74,4 +79,22 @@ main .upper p {
   margin: 0 auto;
   padding-top: 2rem;
   font-size: 1.2rem;
+}
+
+main .middle {
+  padding: 3rem 0;
+  background-color: #ff7f50;
+  color: #fff;
+  text-align: center;
+}
+
+main .middle h2 {
+  width: 60%;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+main .middle p {
+  width: 60%;
 }
