@@ -1,4 +1,4 @@
-@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+/* @import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css"); */
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,700|Pacifico&display=swap");
 
 * {
@@ -175,4 +175,21 @@ main .gallery .images p {
 main .gallery .images img {
   width: 100%;
   height: auto;
+}
+
+footer {
+  padding: 1rem 0;
+  background-color: #ff7f50;
+  color: #fff;
+  text-align: center;
+}
+
+footer .wrapper p {
+  padding-right: 5rem;
+}
+
+footer .wrapper p,
+footer .wrapper .icons {
+  display: inline-block;
+  vertical-align: middle;
 }
