@@ -193,3 +193,8 @@ footer .wrapper .icons {
   display: inline-block;
   vertical-align: middle;
 }
+
+footer .wrapper a {
+  color: #FFF;
+  text-decoration: none;
+}
