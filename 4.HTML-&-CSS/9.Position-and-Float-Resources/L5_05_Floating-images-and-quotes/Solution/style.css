@@ -1,0 +1,90 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  width: 60%;
+  margin: 5rem auto;
+  background-color: #eeeeee;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 0.5em;
+  font-family: "Times New Roman", serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2.7rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+main section {
+  margin: 2rem 0;
+}
+
+main p {
+  padding-bottom: 1em;
+}
+
+header {
+  padding-bottom: 2rem;
+  border-bottom: 3px solid #000;
+}
+
+.site-title {
+  display: inline-block;
+  font-size: 3.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+img {
+  padding: 0.5rem;
+  border: 2px solid #000;
+  background-color: #fff;
+}
+
+.align-right {
+  float: right;
+  margin: 0 0 1rem 2rem;
+}
+
+.cleaner:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.middle blockquote {
+  width: 50%;
+  margin-left: 1rem;
+  padding: 0 2rem;
+  border-left: 3px solid #dddddd;
+  float: right;
+  font-style: italic;
+}
+
+.middle blockquote .author {
+  text-align: right;
+}
+
+.align-left {
+  float: left;
+  margin: 0 2rem 1rem 0;
+}
