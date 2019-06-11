@@ -1,0 +1,99 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font: 16px/1.5 Verdana, sans-serif;
+}
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9e9e9;
+}
+
+article {
+  width: 52%;
+  height: 64vh;
+  display: flex;
+}
+
+section {
+  width: 50%;
+  height: 100%;
+}
+
+.image {
+  padding: 2rem;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/cover.jpg") center / cover no-repeat;
+}
+
+.image p {
+  text-align: center;
+}
+
+.image p:nth-of-type(1) {
+  font-size: 2.3rem;
+  padding-top: 12rem;
+}
+
+.image p:nth-of-type(2) {
+  font-size: 1.5rem;
+  padding-bottom: 12rem;
+}
+
+.image i {
+  padding: 0 0.3rem;
+}
+
+.form {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.form label,
+.form input:not([type="submit"]) {
+  display: block;
+}
+
+.form label {
+  color: #ccc;
+}
+
+.form input:not([type="submit"]) {
+  width: 100%;
+  margin: 1.7rem 0;
+  padding: 0 0 0.5rem 1rem;
+  font-size: 1.2rem;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.form input[type="submit"] {
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 3rem;
+}
+
+.form a {
+  padding-left: 1rem;
+  color: #ccc;
+}
