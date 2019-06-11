@@ -22,8 +22,10 @@ h1,
 h2,
 h3 {
   padding-bottom: 0.5em;
-  font-family: "Times New Roman", serif;
+  font-family: Georgia, serif;
   font-weight: normal;
+  font-size: 1em;
+  line-height: 1.2;
 }
 
 h1 {
@@ -34,6 +36,42 @@ h2 {
   font-size: 2.5rem;
 }
 
+h3 {
+  font-size: 2.2rem;
+}
+
+header {
+  padding-bottom: 2rem;
+  border-bottom: 3px solid #000;
+}
+
+header .site-title {
+  display: inline-block;
+  font-size: 3.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+header nav {
+  float: right;
+  margin-top: 2rem;
+}
+
+header li {
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #2d8636;
+}
+
+main {
+  width: 70%;
+  float: left;
+}
+
 main section {
   margin: 2rem 0;
 }
@@ -42,23 +80,11 @@ main p {
   padding-bottom: 1em;
 }
 
-header {
-  padding-bottom: 2rem;
-  border-bottom: 3px solid #000;
-}
-
-.site-title {
-  display: inline-block;
-  font-size: 3.8rem;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
 img {
   padding: 0.5rem;
   border: 2px solid #000;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.25);
 }
 
 .align-right {
@@ -89,4 +115,22 @@ img {
 .align-left {
   float: left;
   margin: 0 2rem 1rem 0;
+}
+
+aside {
+  width: 30%;
+  float: left;
+  padding-left: 5rem;
+}
+
+aside h3 {
+  padding-top: 2rem;
+}
+
+aside ul {
+  padding-left: 3rem;
+}
+
+aside li {
+  list-style-type: square;
 }
