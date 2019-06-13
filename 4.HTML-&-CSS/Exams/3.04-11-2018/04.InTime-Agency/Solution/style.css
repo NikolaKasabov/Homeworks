@@ -1,0 +1,83 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font: 16px/1.5 Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+}
+
+header {
+  padding: 2rem 16rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+header p {
+  font-size: 2.5rem;
+  vertical-align: bottom;
+}
+
+header p span {
+  color: #21A2B5;
+}
+
+header ul {
+  display: flex;
+  width: 50rem;
+  justify-content: space-between;
+
+}
+
+header li {
+  list-style: none;
+  display: block;
+  padding: 0.5rem 0;
+  border-bottom: 3px solid transparent;
+}
+
+header li:hover {
+  border-bottom: 3px solid #21A2B5;
+}
+
+header a {
+  text-decoration: none;
+  color: #000;
+}
+
+main .top {
+  height: 46rem;
+  padding: 17rem 0 0 14rem;
+  background: url('../images/slide2.jpg') center / cover no-repeat;
+}
+
+main .top section {
+  width: 45rem;
+  padding: 1rem;
+  color: #fff;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+}
+
+main .top p {
+  font-size: 3.8rem;
+}
+
+main .top button {
+  padding: 1rem 3rem;
+  font-size: 2rem;
+  border: none;
+  border-radius: 3rem;
+  background-color: #008CBA;
+  color: #fff;
+  cursor: pointer;
+}
