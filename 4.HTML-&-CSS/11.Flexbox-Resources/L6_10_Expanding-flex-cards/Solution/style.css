@@ -1,0 +1,52 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font: 16px/1.5 Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(238, 238, 238);
+}
+
+.container {
+  display: flex;
+}
+
+.container p {
+  width: 6vw;
+  height: 40vh;
+  border-radius: 0.7rem;
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.4);
+}
+
+.container p:not(:nth-child(4)) {
+  margin-right: 1.5rem;
+}
+
+.container p:nth-child(1) {
+  background: url("../Requirements-and-Resources/images/Image1.jpg") center / cover no-repeat;
+}
+
+.container p:nth-child(2) {
+  width: 30vw;
+  background: url("../Requirements-and-Resources/images/Image2.jpg") center / cover no-repeat;
+}
+
+.container p:nth-child(3) {
+  background: url("../Requirements-and-Resources/images/Image3.jpg") center / cover no-repeat;
+}
+
+.container p:nth-child(4) {
+  background: url("../Requirements-and-Resources/images/Image4.jpg") center / cover no-repeat;
+}
