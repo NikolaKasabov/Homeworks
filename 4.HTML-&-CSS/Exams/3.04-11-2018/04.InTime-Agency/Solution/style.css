@@ -225,3 +225,40 @@ footer .top .email button {
   border-radius: 0.4rem;
   vertical-align: bottom;
 }
+
+footer .middle {
+  padding: 4rem 15rem;
+  background-color: #2f3539;
+  color: #fff;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .middle li {
+  list-style: none;
+}
+
+footer .middle a {
+  display: block;
+  padding-top: 0.5em;
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .middle .icons-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .bottom {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  background-color: #262B2F;
+  color: #fff;
+}
+
+footer .bottom span {
+  color: #2263AD;
+}
