@@ -64,6 +64,13 @@ form .inputs i {
   left: 1rem;
 }
 
+form .inputs input:hover {
+  border-color: #009900;
+}
+form .inputs input:hover + i {
+  color: #009900;
+}
+
 form input[type="submit"] {
   padding: 0.2rem 0.5rem;
   margin: 0 0 2rem 2rem;
