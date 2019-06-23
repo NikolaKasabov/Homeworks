@@ -1,0 +1,12 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font: 16px/1.5 Helvetica, sans-serif;
+  box-sizing: border-box;
+}
