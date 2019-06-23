@@ -1,0 +1,70 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font: 16px/1.5 Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 5rem;
+}
+
+form {
+  width: 34rem;
+}
+
+form fieldset,
+form legend {
+  background-color: #f9f9f9;
+  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.3);
+  border: 1px solid #000;
+  border-radius: 0.3rem;
+}
+
+form legend {
+  width: 10rem;
+  padding: 0.5rem 1rem;
+}
+
+form p {
+  display: flex;
+  flex-direction: column;
+}
+
+form .inputs {
+  padding: 2rem;
+  padding-bottom: 0;
+}
+
+form .inputs p {
+  padding-bottom: 1rem;
+}
+
+form .inputs label {
+  font-weight: bold;
+}
+
+form .inputs p input {
+  padding: 0.8rem;
+  padding-left: 2rem;
+  border: 1px solid #cccccc;
+  border-radius: 0.3rem;
+}
+
+form .inputs i {
+  width: 1rem;
+  position: relative;
+  top: -1.9rem;
+  left: 1rem;
+}
+
+form input[type="submit"] {
+  padding: 0.2rem 0.5rem;
+  margin: 0 0 2rem 2rem;
+}
