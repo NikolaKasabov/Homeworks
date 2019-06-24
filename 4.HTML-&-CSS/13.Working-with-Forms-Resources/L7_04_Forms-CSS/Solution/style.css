@@ -1,0 +1,99 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font: 18px/1.5 Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  flex: 0 1 32rem;
+}
+
+fieldset {
+  padding: 1rem 0 2rem 0;
+}
+
+fieldset,
+legend {
+  background-color: #f8f8f8;
+  border: 1px solid #5b5b5b;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
+}
+
+legend {
+  margin-left: 0;
+  padding: 0.5rem 1rem;
+  width: 12rem;
+}
+
+.wrapper {
+  position: relative;
+  margin: 0 2rem 2rem 2rem;
+}
+
+label {
+  margin-left: 2rem;
+  font-weight: bold;
+}
+
+.wrapper input {
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 0.3rem;
+  border: 1px solid #C5C5C5;
+}
+
+i {
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+}
+
+input[type="submit"] {
+  padding: 0.8rem 1.5rem;
+  margin-left: 2rem;
+  background-color: #2d2d2d;
+  color: #fff;
+  border: none;
+  border-radius: 0.3rem;
+  font-weight: bold;
+
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1400px) {
+  .wrapper {
+    display: inline-block;
+    width: 60%;
+  }
+}
+
+@media (min-width: 1401px) {
+  html {
+    font-size: 20px;
+  }
+}
