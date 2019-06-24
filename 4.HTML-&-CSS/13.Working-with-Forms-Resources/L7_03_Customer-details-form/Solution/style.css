@@ -1,0 +1,65 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font: 16px/1.2 Montserrat, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 40%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #add8e6;
+  border-radius: 0.3rem;
+}
+
+form h1 {
+  width: 100%;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+form label:not(.for-radio),
+form span {
+  width: 6rem;
+  display: inline-block;
+}
+
+form input:not([type="radio"]),
+form select,
+form textarea {
+  width: 17rem;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+form input[type="radio"]:nth-of-type(2) {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+form label[for="message"] {
+  vertical-align: top;
+}
+
+form input#terms {
+  width: auto;
+}
+
+form label[for="terms"] {
+  width: auto;
+}

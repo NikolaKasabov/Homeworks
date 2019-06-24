@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Customer Details Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <form action="#">
+    <h1>Customer Details</h1>
+    <p>
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" placeholder="George">
+    </p>
+
+    <p>
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" placeholder="Devis">
+    </p>
+
+    <p>
+      <span>Gender</span>
+      <input type="radio" name="gender" id="male">
+      <label for="male" class="for-radio">Male</label>
+      <input type="radio" name="gender" id="female">
+      <label for="female" class="for-radio">Female</label>
+    </p>
+
+    <p>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="your@email.com">
+    </p>
+
+    <p>
+      <label for="phone">Phone</label>
+      <input type="text" id="phone" placeholder="+359123456789">
+    </p>
+
+    <p>
+      <label for="town">Town</label>
+      <select id="town">
+        <option>Varna</option>
+        <option>Burgas</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="age">Age</label>
+      <input type="number" id="age" min="0">
+    </p>
+
+    <p>
+      <label for="language">Language</label>
+      <input type="text" id="language">
+    </p>
+
+    <p>
+      <label for="message">Message</label>
+      <textarea id="message" cols="35" rows="5" placeholder="More information..."></textarea>
+    </p>
+
+    <p>
+      <input type="checkbox" id="terms">
+      <label for="terms">I agree the Terms and Conditions</label>
+    </p>
+  </form>
+
+</body>
+
+</html>
