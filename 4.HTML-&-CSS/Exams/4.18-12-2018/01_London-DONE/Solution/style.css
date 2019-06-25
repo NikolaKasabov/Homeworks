@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font: 16px/1.5 Montserrat, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #BF1C15;
+  font-weight: bold;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.cards {
+  width: 48vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  margin-bottom: 1rem;
+  flex: 0 0 48%;
+  border: 1px solid #808080;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card p {
+  padding: 1rem;
+}
+
+nav {
+  padding-left: 2rem;
+}
+
+nav ul li {
+  list-style: none;
+  padding-top: 0.5rem;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #BF1C15;
+}
+
+nav ul i {
+  padding-right: 0.5rem;
+}
+
+@media (min-width:1600px) {
+  html {
+    font-size: 20px;
+  }
+}
