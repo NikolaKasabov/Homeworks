@@ -1,0 +1,81 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font: 16px/1.5 Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+header p {
+  width: 15%;
+  padding: 1rem;
+  position: relative;
+  top: 2rem;
+  left: 5rem;
+  background-image: linear-gradient(to top, #96680a, #a3791c, #b0892c, #bd9b3b, #caac4a);
+  box-shadow: 0 0 0.3rem 0 rgba(0, 0, 0, 0.5);
+}
+
+header p img {
+  width: 100%;
+  height: auto;
+}
+
+header .top {
+  width: 85%;
+  text-align: center;
+}
+
+header .top ul {
+  padding: 2rem 5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .top li {
+  margin-left: 2rem;
+}
+
+header li {
+  list-style: none;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header .top i {
+  display: block;
+  font-size: 1.8rem;
+}
+
+header .bottom {
+  width: 85%;
+}
+
+header .bottom ul {
+  padding-right: 5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .bottom li {
+  margin-left: 2.5rem;
+}
+
+main .top {
+  height: 32rem;
+  background: url("../img/slider.jpg") center / 120% no-repeat;
+}
