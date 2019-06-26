@@ -190,7 +190,7 @@ footer .top {
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
-  background-color: #B58E0F;
+  background-color: #b58e0f;
   font-size: 0.9rem;
   color: #fff;
 }
@@ -201,7 +201,7 @@ footer .bottom {
   font-size: 0.85rem;
 }
 
-@media (min-width:1600px) {
+@media (min-width: 1600px) {
   html {
     font-size: 22px;
   }
