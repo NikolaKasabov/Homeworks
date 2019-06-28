@@ -1,0 +1,36 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font: 16px/1.5 Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+@media (min-width: 600px) {
+  .mq-width:after {
+    display: inline;
+    content: 'Viewport width is larger than 600px';
+    color: #035B02;
+  }
+}
+
+@media (min-height: 600px) {
+  .mq-height:after {
+    display: inline;
+    content: 'Viewport height is larger than 600px';
+    color: #035B02;
+  }
+}
+
+@media (min-aspect-ratio: 8/5) {
+  .mq-ar:after {
+    display: inline;
+    content: 'Aspect Ratio is larger than 8/5';
+    color: #035B02;
+  }
+}
