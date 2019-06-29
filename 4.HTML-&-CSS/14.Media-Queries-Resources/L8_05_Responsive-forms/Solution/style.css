@@ -1,0 +1,129 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font: 16px/1.5 Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 5rem;
+}
+
+form {
+  width: 34rem;
+  margin: 0 auto;
+}
+
+form fieldset,
+form legend {
+  background-color: #f9f9f9;
+  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.3);
+  border: 1px solid #000;
+  border-radius: 0.3rem;
+}
+
+form legend {
+  width: 10rem;
+  padding: 0.5rem 1rem;
+}
+
+form p {
+  display: flex;
+  flex-direction: column;
+}
+
+form .inputs {
+  padding: 2rem;
+  padding-bottom: 0;
+}
+
+form .inputs p {
+  padding-bottom: 1rem;
+}
+
+form .inputs label {
+  font-weight: bold;
+}
+
+form .inputs p input {
+  padding: 0.8rem;
+  padding-left: 2rem;
+  border: 1px solid #cccccc;
+  border-radius: 0.3rem;
+  outline: none;
+}
+
+form .inputs i {
+  width: 1rem;
+  position: relative;
+  top: -1.9rem;
+  left: 1rem;
+}
+
+form .inputs input:hover,
+form .inputs input:focus {
+  border-color: #009900;
+}
+form .inputs input:hover + i,
+form .inputs input:focus + i {
+  color: #009900;
+}
+
+form input[type="submit"] {
+  padding: 0.5rem 1rem;
+  margin: 0 0 2rem 2rem;
+  background-color: #2d2d2d;
+  color: #fff;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+@media (min-width: 900px) {
+  form p {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  form .inputs {
+    padding-right: 1rem;
+  }
+
+  form .inputs label {
+    width: 6rem;
+  }
+
+  form .inputs input {
+    margin-left: 1rem;
+    width: 100%;
+  }
+
+  form .inputs i {
+    top: 0rem;
+    left: -23rem;
+  }
+}
+
+
+@media (max-width: 1800px){
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 900px){
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px){
+  html {
+    font-size: 10px;
+  }
+}
