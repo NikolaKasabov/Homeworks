@@ -80,10 +80,11 @@ main .team h2 {
   margin: 0 auto;
 }
 
-main .team h2:after {
+main .team h2:after,
+main .newsletter h2:after {
   margin: 0.5em auto 1em auto;
   display: block;
-  content: '';
+  content: "";
   width: 3em;
   border-bottom: 3px solid #000;
 }
@@ -100,4 +101,60 @@ main .team .team-member {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
+
+main .team .team-member .image-wrapper {
+  width: 8em;
+  height: 8em;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 0 5px rgba(255, 255, 255, 0.6), 0px 0px 5px 0 rgba(0, 0, 0, 0.6);
+}
+
+main .team .team-member img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: -2;
+  display: block;
+}
+
+main .team .team-member .name {
+  padding-top: 2em;
+  font-weight: bold;
+}
+
+main .team .team-member .description {
+  padding: 2em 0;
+}
+
+main .newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: purple;
+}
+
+main .newsletter h2 {
+  margin: 0 auto;
+  color: #fff;
+}
+
+main .newsletter form {
+  display: flex;
+}
+
+main .newsletter form input {
+  padding: 0.5em;
+  width: 23em;
+  border: 2px solid #000;
+}
+
+main .newsletter form a {
+  margin-left: 0.5em;
+  padding: 0.5em;
+  border: 2px solid #000;
+  background-color: #fff;
+}
+
