@@ -1,0 +1,17 @@
+@media (min-width: 501px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 901px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1801px) {
+  html {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,103 @@
+body {
+  height: 100vh;
+  background: url("../Requirements-and-Resources/Patterns/1.jpg");
+}
+
+#nav-toggle {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+#nav-toggle:checked + header nav {
+  display: block;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .site-title {
+  flex: 0 0 18em;
+}
+
+header .site-title h1 {
+  color: purple;
+}
+
+header .site-title p {
+  font-family: "Arial Narrow", sans-serif;
+  font-size: 0.8em;
+  letter-spacing: 0.04em;
+}
+
+header label {
+  font-size: 1.2em;
+}
+
+header nav {
+  display: none;
+  flex: 0 0 100%;
+  text-align: center;
+}
+
+header a {
+  margin-bottom: 0.2em;
+  padding: 0.5em;
+  display: block;
+  background-color: #000;
+  color: #fff;
+}
+
+main .need {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .need .text {
+  flex: 0 0 60%;
+  font-size: 1.2em;
+}
+
+main .need .text a {
+  margin-top: 1em;
+  padding: 0.5em;
+  display: block;
+  width: 13em;
+  border: 2px solid #000;
+  text-align: center;
+}
+
+main .need .image i {
+  font-size: 12em;
+}
+
+main .team h2 {
+  margin: 0 auto;
+}
+
+main .team h2:after {
+  margin: 0.5em auto 1em auto;
+  display: block;
+  content: '';
+  width: 3em;
+  border-bottom: 3px solid #000;
+}
+
+main .team .section-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+main .team .team-member {
+  margin-bottom: 2em;
+  flex: 0 0 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
