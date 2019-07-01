@@ -76,12 +76,14 @@ main .need .image i {
   font-size: 12em;
 }
 
-main .team h2 {
+main .team h2,
+main .testimonials h2 {
   margin: 0 auto;
 }
 
 main .team h2:after,
-main .newsletter h2:after {
+main .newsletter h2:after,
+main .testimonials h2:after {
   margin: 0.5em auto 1em auto;
   display: block;
   content: "";
@@ -89,13 +91,14 @@ main .newsletter h2:after {
   border-bottom: 3px solid #000;
 }
 
-main .team .section-content {
+main .section-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-main .team .team-member {
+main .team .team-member,
+main .testimonials .element {
   margin-bottom: 2em;
   flex: 0 0 40%;
   display: flex;
@@ -104,7 +107,7 @@ main .team .team-member {
   text-align: center;
 }
 
-main .team .team-member .image-wrapper {
+main .image-wrapper {
   width: 8em;
   height: 8em;
   border-radius: 50%;
@@ -112,7 +115,7 @@ main .team .team-member .image-wrapper {
   box-shadow: inset 0px 0px 0 5px rgba(255, 255, 255, 0.6), 0px 0px 5px 0 rgba(0, 0, 0, 0.6);
 }
 
-main .team .team-member img {
+main img {
   width: 100%;
   height: auto;
   position: relative;
@@ -120,7 +123,7 @@ main .team .team-member img {
   display: block;
 }
 
-main .team .team-member .name {
+main .name {
   padding-top: 2em;
   font-weight: bold;
 }
@@ -158,3 +161,28 @@ main .newsletter form a {
   background-color: #fff;
 }
 
+main .testimonials {
+  background: url('../Requirements-and-Resources/Patterns/2.jpg');
+  position: relative;
+  z-index: -5;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.6);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footer-sitemap ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .footer-sitemap li {
+  display: block;
+  width: 50%;
+}
+
+footer span {
+  padding-left: 1.3em;
+}

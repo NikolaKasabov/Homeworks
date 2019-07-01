@@ -8,6 +8,43 @@
   html {
     font-size: 16px;
   }
+
+  header label {
+    display: none;
+  }
+
+  header nav {
+    display: block;
+    flex-basis: 45%;
+  }
+
+  header ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header a {
+    background-color: transparent;
+    color: #000;
+  }
+
+  main .need {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  main .team .team-member,
+  main .testimonials .element {
+    flex-basis: 30%;
+  }
+
+  footer {
+    flex-direction: row;
+  }
+
+  footer section {
+    flex: 0 0 33%;
+  }
 }
 
 @media (min-width: 1801px) {
