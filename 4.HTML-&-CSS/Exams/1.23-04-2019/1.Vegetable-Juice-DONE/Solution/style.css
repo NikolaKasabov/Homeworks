@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
+@import url("https://fonts.googleapis.com/css?family=PT+Serif&display=swap");
 
 *,
 *:before,
@@ -9,6 +9,79 @@
 }
 
 html {
-  font: 16px/1.5 Helvetica, sans-serif;
+  font: 16px/1.5 "PT Serif", serif;
   box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style: none outside;
+}
+
+.wrapper {
+  width: 66%;
+  display: flex;
+  box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.6);
+  
+}
+
+.wrapper > section {
+  flex: 0 0 50%;
+}
+
+.left {
+  padding: 2em;
+  background: url('../Requirements-and-Resources/image/image1.png');
+}
+
+.left .top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.left .top h1 {
+  flex: 0 0 100%;
+  font-size: 1.8em;
+  text-align: center;
+  border-bottom: 2px dotted #488401;
+}
+
+.left .top p {
+  padding-top: 0.5em;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+.left .middle ul {
+  padding: 2.5em 0;
+}
+
+.left .middle span {
+  font-weight: bold;
+  color: #488401;
+}
+
+.left .bottom table {
+  margin: 2em auto 1em auto;
+  border-collapse: collapse;
+  font-size: 1.1em;
+  text-align: center;
+  border: 1px solid #488401;
+}
+
+.left .bottom th,
+.left .bottom td {
+  border: 1px solid #488401;
+  padding: 0 2em;
+}
+
+.right {
+  background: url('../Requirements-and-Resources/image/image.jpg') center / cover no-repeat;
 }
