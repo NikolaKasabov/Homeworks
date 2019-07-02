@@ -28,7 +28,6 @@ li {
   width: 66%;
   display: flex;
   box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.6);
-  
 }
 
 .wrapper > section {
@@ -37,7 +36,7 @@ li {
 
 .left {
   padding: 2em;
-  background: url('../Requirements-and-Resources/image/image1.png');
+  background: url("../Requirements-and-Resources/image/image1.png");
 }
 
 .left .top {
@@ -83,5 +82,15 @@ li {
 }
 
 .right {
-  background: url('../Requirements-and-Resources/image/image.jpg') center / cover no-repeat;
+  background: url("../Requirements-and-Resources/image/image.jpg") center / cover no-repeat;
+}
+
+@media (min-width: 1800px) {
+  html {
+    font-size: 23px;
+  }
+
+  .left {
+    background-size: 100%;
+  }
 }
