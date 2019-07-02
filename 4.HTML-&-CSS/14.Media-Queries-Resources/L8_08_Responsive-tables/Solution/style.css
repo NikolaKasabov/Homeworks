@@ -1,0 +1,83 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font: 12px/1.5 Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 3em;
+  background-color: #EEEEEE;
+}
+
+table.bigger-than-phone {
+  display: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #DDDDDD;
+}
+
+th, td {
+  padding: 0.5em;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.phone span {
+  font-weight: bold;
+  padding-right: 1em;
+}
+
+.bigger-than-phone {
+  text-align: left;
+  font-weight: bold;
+}
+
+.bigger-than-phone thead {
+  background-color: #000;
+  color: #fff;
+}
+
+.bigger-than-phone td {
+  width: 33%;
+}
+
+@media (min-width: 501px) {
+  html {
+    font-size: 14px;
+  }
+
+  table.phone {
+    display: none;
+  }
+
+  table.bigger-than-phone {
+    display: table;
+  }
+}
+
+@media (min-width: 901px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1801px) {
+  html {
+    font-size: 18px;
+  }
+}
