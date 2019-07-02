@@ -1,170 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif&display=swap");
-@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
 
-* {
-  box-sizing: border-box;
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
 }
 
 html {
   font: 16px/1.5 "PT Sans", sans-serif;
+  box-sizing: border-box;
 }
 
-header .upper {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.3rem;
-  background-color: #d01919;
-  color: white;
-}
-
-header i {
-  color: white;
-}
-
-header .upper p {
-  padding: 1.3rem 4rem;
-}
-
-header .upper a:not(:last-child) i{
-  padding-right: 1rem;
-}
-
-header .lower {
-  height: 80vh;
-  /* background: url("../Requirements-and-Resources/image/fitness-main.jpg") center / 100% no-repeat; */
-  background: url("../Requirements-and-Resources/image/fitness-main.jpg") center / cover no-repeat;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-nav {
-  align-self: flex-end;
-}
-
-nav ul {
-  width: 50vw;
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-}
-
-nav a {
-  display: block;
-  padding: 2rem 4rem 0 0;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.4);
-}
-
-.lower h1 {
-  padding-top: 10rem;
-  font: bold 5.5rem "PT Serif", serif;
-  letter-spacing: 0.2em;
-}
-
-.lower p {
-  width: 36vw;
-  padding-top: 3rem;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.lower button {
-  margin-top: 3rem;
-  padding: 1rem 2rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 0.2rem;
-  background-color: #d01919;
-  color: white;
-}
-
-.welcome {
-  padding-bottom: 4rem;
-}
-
-.welcome h2,
-.coaches h2 {
-  padding-top: 4rem;
-  font-size: 3rem;
-  letter-spacing: 0.1em;
-  text-align: center;
-}
-
-.welcome h2:after,
-.coaches h2:after {
-  content: "";
-  display: block;
-  margin: 0 auto;
-  padding-top: 2rem;
-  width: 3%;
-  border-bottom: 3px solid #d01919;
-}
-
-.welcome > section,
-.coaches > section {
-  display: flex;
-  justify-content: space-evenly;
-  padding-top: 5rem;
-}
-
-.welcome section section,
-.coaches section section {
-  width: 25%;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.welcome i {
-  font-size: 4rem;
-  padding-bottom: 2rem;
-}
-
-.fa-dumbbell {
-  transform: rotate(-45deg);
-}
-
-.welcome h3 {
-  letter-spacing: 0.1em;
-  color: #d01919;
-}
-
-.coaches {
-  background-color: #efefef;
-}
-
-.coaches > section {
-  justify-content: space-around;
-}
-
-.coaches img {
-  border-radius: 0.3rem;
-  padding-bottom: 1rem;
-}
-
-.coaches p:nth-child(3) {
-  color: #d01919;
-  padding-bottom: 1rem;
-}
-
-.coaches p:last-child {
-  color: #ab9393;
-  width: 70%;
-  margin: 0 auto;
-}
-
-footer {
-  padding: 0.8rem;
-  background-color: #d01919;
-}
-
-footer p {
-  text-align: center;
-  font-size: 1.4rem;
+h1,
+h2,
+h3 {
+  font-family: "PT Serif", serif;
 }
