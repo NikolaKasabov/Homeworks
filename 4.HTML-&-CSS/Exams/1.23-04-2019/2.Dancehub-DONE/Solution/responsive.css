@@ -17,4 +17,35 @@
   .trainings div {
     width: 50%;
   }
+
+  .instructors-pic {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .classes li {
+    width: 45%;
+  }
+
+  .getInTouch {
+    flex-direction: column;
+  }
+
+  .getInTouch .form {
+    width: 100%;
+
+  }
+
+  .getInTouch .map {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  .site-footer .wrapper {
+    flex-wrap: wrap;
+  }
+
+  .site-footer .about {
+    flex: 0 0 100%;
+  }
 }
