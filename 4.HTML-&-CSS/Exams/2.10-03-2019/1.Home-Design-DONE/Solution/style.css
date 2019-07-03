@@ -83,7 +83,12 @@ main section .wrapper img {
   transform: translate(-50%, -50%);
 }
 
+main section h2 {
+  padding-top: 0.5em;
+}
+
 main section h2:after {
+  padding-top: 0.5em;
   display: block;
   content: "";
   width: 90%;
@@ -91,10 +96,20 @@ main section h2:after {
   margin: 0 auto;
 }
 
+main section p {
+  padding: 0.5em 1em 1em 1em;
+}
+
 main section a {
   margin-top: auto;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  display: inline-block;
+
+  align-self: center;
 }
 
 main section a i {
+  padding-left: 0.5em;
   color: #cb2027;
 }
