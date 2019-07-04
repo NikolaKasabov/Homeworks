@@ -15,27 +15,34 @@ html {
 
 body {
   padding: 0 5em;
+
+
+  height: 200vh;
+}
+
+li {
+  list-style: none outside;
 }
 
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   color: #fff;
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
     url("../Requirements-and-Resources/image/computer-main.jpg") center/ cover no-repeat;
 }
 
 header .links {
-  /* padding: 2em 11.5em; */
   padding-top: 2em;
   width: 70%;
   display: flex;
   justify-content: space-between;
 }
 
-header .links a {
+header a {
   text-decoration: none;
   font-size: 1.3em;
   color: #fff;
@@ -44,4 +51,59 @@ header .links a {
 header h1 {
   padding-top: 1em;
   font-size: 3.5em;
+}
+
+header h1 + p {
+  padding-top: 0.8em;
+  width: 35%;
+  font-size: 1.3em;
+}
+
+header p + a {
+  margin: 2.7em 0 2.5em 0;
+  padding: 0.3em 1em;
+  font-weight: bold;
+  background-color: #00D08E;
+  border-radius: 0.2em;
+  text-shadow: none;
+}
+
+header a + a {
+  margin-bottom: 3.5em;
+}
+
+main .top {
+  display: flex;
+}
+
+main .top .image,
+main .top .content {
+  flex: 0 0 50%;
+}
+
+main .top .image {
+  background: url('../Requirements-and-Resources/image/tablet.jpg') center / cover;
+}
+
+main .top .content {
+  padding: 1.5em 3.5em;
+}
+
+main .top .content h2 {
+  font-size: 2em;
+}
+
+main .top .content p {
+  font-size: 1.3em;
+  padding-bottom: 1.5em;
+}
+
+main .top .content li {
+  padding-bottom: 0.85em;
+  font-size: 1.1em;
+}
+
+main .top .content i {
+  color: #00D08E;
+  padding-right: 2em;
 }
