@@ -37,7 +37,7 @@ header {
   color: #fff;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
-    url("../Requirements-and-Resources/image/computer-main.jpg") center/ cover no-repeat;
+    url("../Requirements-and-Resources/image/computer-main.jpg") center / cover no-repeat;
 }
 
 header .links {
@@ -68,8 +68,8 @@ header p + a {
   margin: 2.7em 0 2.5em 0;
   padding: 0.15em 0.8em;
   font-weight: bold;
-  background-color: #00D08E;
-  border: 3px solid #00D08E;
+  background-color: #00d08e;
+  border: 3px solid #00d08e;
   border-radius: 0.2em;
   text-shadow: none;
 }
@@ -93,7 +93,7 @@ main .top .content {
 }
 
 main .top .image {
-  background: url('../Requirements-and-Resources/image/tablet.jpg') center / cover;
+  background: url("../Requirements-and-Resources/image/tablet.jpg") center / cover;
 }
 
 main .top .content {
@@ -111,7 +111,7 @@ main .top .content li {
 }
 
 main .top .content i {
-  color: #00D08E;
+  color: #00d08e;
   padding-right: 2em;
 }
 
@@ -153,17 +153,17 @@ main .middle .content .wrapper .element p {
   padding-top: 0.3em;
   font-size: 1.3em;
   font-weight: bold;
-  color: #00D08E;
+  color: #00d08e;
 }
 
 main .middle .image {
-  background: url('../Requirements-and-Resources/image/pen.jpg') center / cover no-repeat;
+  background: url("../Requirements-and-Resources/image/pen.jpg") center / cover no-repeat;
 }
 
 main .bottom {
   padding: 1.5em 5.6em;
   text-align: center;
-  background-color: #B2F1DD;
+  background-color: #b2f1dd;
 }
 
 main .bottom .wrapper {
