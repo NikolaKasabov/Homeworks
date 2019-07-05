@@ -15,9 +15,6 @@ html {
 
 body {
   padding: 0 5em;
-
-
-  height: 200vh;
 }
 
 li {
@@ -26,6 +23,10 @@ li {
 
 h2 {
   font-size: 2em;
+}
+
+h3 {
+  font-size: 1.3em;
 }
 
 header {
@@ -65,11 +66,17 @@ header h1 + p {
 
 header p + a {
   margin: 2.7em 0 2.5em 0;
-  padding: 0.3em 1em;
+  padding: 0.15em 0.8em;
   font-weight: bold;
   background-color: #00D08E;
+  border: 3px solid #00D08E;
   border-radius: 0.2em;
   text-shadow: none;
+}
+
+header p + a:hover {
+  background-color: transparent;
+  border-color: #fff;
 }
 
 header a + a {
@@ -153,3 +160,32 @@ main .middle .image {
   background: url('../Requirements-and-Resources/image/pen.jpg') center / cover no-repeat;
 }
 
+main .bottom {
+  padding: 1.5em 5.6em;
+  text-align: center;
+  background-color: #B2F1DD;
+}
+
+main .bottom .wrapper {
+  margin-top: 3em;
+  margin-bottom: 2em;
+  height: 18.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+main .bottom .wrapper .element {
+  flex: 0 0 30%;
+}
+
+main .bottom .bold {
+  font-weight: bold;
+}
+
+@media (min-width: 1800px) {
+  html {
+    font-size: 23px;
+  }
+}
