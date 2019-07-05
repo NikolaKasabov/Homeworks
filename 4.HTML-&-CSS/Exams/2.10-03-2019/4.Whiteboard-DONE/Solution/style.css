@@ -24,6 +24,10 @@ li {
   list-style: none outside;
 }
 
+h2 {
+  font-size: 2em;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -55,8 +59,8 @@ header h1 {
 
 header h1 + p {
   padding-top: 0.8em;
-  width: 35%;
-  font-size: 1.3em;
+  width: 42%;
+  font-size: 1.4em;
 }
 
 header p + a {
@@ -89,10 +93,6 @@ main .top .content {
   padding: 1.5em 3.5em;
 }
 
-main .top .content h2 {
-  font-size: 2em;
-}
-
 main .top .content p {
   font-size: 1.3em;
   padding-bottom: 1.5em;
@@ -107,3 +107,49 @@ main .top .content i {
   color: #00D08E;
   padding-right: 2em;
 }
+
+main .middle {
+  display: flex;
+}
+
+main .middle .content,
+main .middle .image {
+  flex: 0 0 50%;
+}
+
+main .middle .content {
+  padding: 2em 4em;
+  text-align: center;
+}
+
+main .middle .content .wrapper {
+  height: 18em;
+  padding-top: 2.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+main .middle .content .wrapper .element {
+  width: 30%;
+}
+
+main .middle .content .wrapper .element img {
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+  height: auto;
+}
+
+main .middle .content .wrapper .element p {
+  padding-top: 0.3em;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #00D08E;
+}
+
+main .middle .image {
+  background: url('../Requirements-and-Resources/image/pen.jpg') center / cover no-repeat;
+}
+
