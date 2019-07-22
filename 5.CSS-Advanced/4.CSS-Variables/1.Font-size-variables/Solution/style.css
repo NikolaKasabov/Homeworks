@@ -1,0 +1,22 @@
+@import url("./variables.css");
+@import url("./layout.css");
+
+h1 {
+  padding-top: 0.5em;
+  font-size: var(--h1-font-size);
+  text-align: center;
+}
+
+h3 {
+  padding: 0.8em 0;
+  font-size: var(--h3-font-size);
+  font-style: italic;
+}
+
+p {
+  font-size: var(--p-font-size);
+}
+
+p + p {
+  padding-top: 0.5em;
+}

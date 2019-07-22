@@ -1,0 +1,16 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.site {
+  margin: 0 auto;
+  width: 60%;
+}

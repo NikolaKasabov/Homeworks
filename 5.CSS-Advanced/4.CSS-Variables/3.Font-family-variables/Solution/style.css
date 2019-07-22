@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,700&display=swap");
+@import url("./variables.css");
+@import url("./layout.css");
+
+html {
+  font: 16px/1.5 var(--all-content-font), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  padding-bottom: 0.5em;
+  font-family: var(--headings-font);
+}
+
+h1 {
+  padding-bottom: 1em;
+}
+
+p {
+  padding-bottom: 1em;
+}
+
+.site header {
+  padding-top: 2em;
+  text-align: center;
+}

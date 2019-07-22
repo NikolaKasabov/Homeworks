@@ -1,0 +1,53 @@
+@import url("./variables.css");
+@import url("./layout.css");
+
+html {
+  color: var(--primary-color);
+}
+
+li {
+  list-style: none outside;
+}
+
+.site {
+  padding: 3em;
+  border: 1px solid var(--yellow-color);
+  border-radius: 0.3em;
+}
+
+.site ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.site li {
+  padding-right: 1em;
+  flex: 0 0 32%;
+  display: flex;
+  flex-direction: column;
+}
+
+.site h2 {
+  padding-bottom: 1em;
+}
+
+.site p {
+  font-size: 1.2em;
+}
+
+.site a {
+  margin-top: auto;
+  padding: 0.8em 1.7em;
+  align-self: flex-start;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: var(--yellow-color);
+  color: var(--white-color);
+  border-radius: 0.3em;
+}
+
+.site a:hover {
+  background-color: var(--primary-color);
+  color: var(--yellow-color);
+}
