@@ -1,0 +1,36 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font: 20px/1.5 Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E8EAEE;
+}
+
+a {
+  padding: 1em 2em;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  font-weight: bold;
+  border: 5px solid #203F5D;
+  transition: border-width 0.3s linear;
+}
+
+a:hover {
+  border-width: 10px;
+}
