@@ -1,0 +1,24 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes circle-to-square {
+  from {
+    background-color: red;
+    border-radius: 50%;
+  }
+
+  to {
+    background-color: orange;
+    border-radius: 0;
+  }
+}
+
+.element {
+  width: 5em;
+  height: 5em;
+  animation: 1s infinite alternate circle-to-square;
+}
