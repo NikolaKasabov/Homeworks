@@ -1,0 +1,49 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font: 16px/1.5 Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.element {
+  width: 70%;
+  height: 80%;
+  position: relative;
+}
+
+.element:hover:after {
+  opacity: 0;
+}
+
+.element:before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #c98532, #d69546, #e2a55a, #efb56e, #fbc582);
+}
+
+.element:after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #81929e, #9aa8b1, #b3bec5, #cdd5d9, #e8ecee);
+  opacity: 1;
+  transition: opacity 0.3s linear;
+}
