@@ -1,0 +1,65 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font: 16px/1.5 Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2em 0;
+  display: grid;
+  grid-template-columns: repeat(2, 45vw);
+  grid-gap: 10px;
+  justify-content: center;
+  grid-auto-flow: dense;
+}
+
+body div {
+  position: relative;
+  overflow: hidden;
+}
+
+body div:before {
+  display: block;
+  content: "";
+  padding-top: 100%;
+}
+
+body div img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body div img.landscape {
+  width: auto;
+  height: 100%;
+}
+
+body div img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+body .small {
+  grid-row-start: span 1;
+  grid-column-start: span 1;
+}
+
+body .big {
+  grid-row-start: span 2;
+  grid-column-start: span 2;
+}
+
+@media (min-width: 800px) {
+  body {
+    grid-template-columns: repeat(4, 15vw);
+  }
+}
