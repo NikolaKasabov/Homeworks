@@ -1,0 +1,26 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font: 16px/1.5 Georgia, serif;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 3em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+body > div {
+  padding: 2em;
+  border-radius: 0.3em;
+  background-color: #000;
+  color: #fff;
+}
