@@ -1,0 +1,46 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font: 16px/1.5 Georgia, serif;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  grid-gap: 30px;
+  grid-template-areas: 
+    "header header"
+    "main sidebar"
+    "footer footer";
+}
+
+p {
+  padding: 2em;
+  background-color: #000;
+  color: #fff;
+  border-radius: 0.3em;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+footer {
+  grid-area: footer;
+}
