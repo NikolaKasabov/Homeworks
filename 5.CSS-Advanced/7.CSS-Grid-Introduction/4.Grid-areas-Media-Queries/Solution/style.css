@@ -1,0 +1,52 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font: 16px/1.5 Georgia, serif;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+}
+
+p {
+  padding: 2em;
+  background-color: #000;
+  color: #fff;
+  border-radius: 0.3em;
+}
+
+@media (min-width: 1024px) {
+  body {
+    grid-template-columns: 7fr 3fr;
+    grid-template-areas: 
+      "header header"
+      "main sidebar"
+      "footer footer";
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  aside {
+    grid-area: sidebar;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+}
