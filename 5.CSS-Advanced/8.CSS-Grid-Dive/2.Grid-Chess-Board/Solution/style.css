@@ -1,0 +1,37 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font: 12px/1.5 Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(5, 8em);
+  grid-template-rows: repeat(5, 8em);
+  grid-gap: 10px;
+  justify-content: center;
+  align-content: center;
+}
+
+body > div {
+  border-radius: 0.3em;
+  border: 1px solid #000;
+}
+
+body > div:nth-child(odd){
+  background-color: #000;
+}
+
+@media (min-width: 1600px) {
+  html {
+    font-size: 14px;
+  }
+}
