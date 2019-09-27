@@ -4,7 +4,7 @@ const uuidv1 = require('uuid/v1');
 const CubeModel = require('../models/cubeModel');
 
 module.exports = {
-  home: (req, res) => {
+  homeGet: (req, res) => {
     // read "database" and render home page
     fs.readFile('./config/database.json', (err, data) => {
       if (err) console.log(err);
@@ -15,6 +15,11 @@ module.exports = {
         cubes,
       });
     });
+  },
+
+  homePost: (req, res) => {
+    const { search, from, to } = req.body;
+    // TODO...
   },
 
   about: (req, res) => {
