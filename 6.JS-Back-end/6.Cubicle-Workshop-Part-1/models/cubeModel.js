@@ -4,7 +4,7 @@ class Cube {
     this.name = name;
     this.description = description;
     this.imageUrl = imageUrl;
-    this.difficultyLevel = difficultyLevel;
+    this.difficultyLevel = Number(difficultyLevel);
   }
 }
 

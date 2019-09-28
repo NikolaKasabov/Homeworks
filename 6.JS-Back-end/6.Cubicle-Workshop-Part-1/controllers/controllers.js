@@ -19,7 +19,28 @@ module.exports = {
 
   homePost: (req, res) => {
     const { search, from, to } = req.body;
-    // TODO...
+
+    // read "database" file
+    fs.readFile('./config/database.json', (err, data) => {
+      if (err) console.log(err);
+
+      const cubes = JSON.parse(data);
+      let result;
+      if (!from || !to) {
+        result = cubes.filter((cube) => cube.name.includes(search));
+      } else {
+        result = cubes.filter((cube) => cube.name.includes(search) && cube.difficultyLevel >= Number(from) && cube.difficultyLevel <= Number(to));
+      }
+
+      if (result.length === 0) {
+        res.redirect('/');
+      } else {
+        res.render('index', {
+          layout: false,
+          cubes: result,
+        });
+      }
+    });
   },
 
   about: (req, res) => {

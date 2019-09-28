@@ -4,20 +4,20 @@
     "name": "cube 1",
     "description": "description 1 lorem.dfsdklfjsdlkfsldkjfskldjflsjkdlfklskdjfklsdjflksdjflksdjflskdjf",
     "imageUrl": "https://rukminim1.flixcart.com/image/832/832/jiqb8nk0/puzzle/t/d/w/1-rubiks-cube-3x3x3-cube-high-speed-stickerless-magic-rubix-cube-original-imaf6ds3bdkxz5x8.jpeg?q=70",
-    "difficultyLevel": "2"
+    "difficultyLevel": 2
   },
   {
     "id": "4d6b54b0-e125-11e9-b013-758f51bb2566",
     "name": "cube 2",
     "description": "description 2 dslfhsjkdfhksdhfjk sd fhkjsdhfjkdh ksjkdf hsjkdfh khd fjkdsh fkjsdf",
     "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71WS9kb-JFL._SY355_.jpg",
-    "difficultyLevel": "4"
+    "difficultyLevel": 4
   },
   {
     "id": "820d4ca0-e125-11e9-9e44-4151d9feac62",
     "name": "cube 3",
     "description": "desc 3 skjdkldfkldsj ldklfj klsdjfkldjfkljdkljflksdjfklsjdfkl kldfjkldsjflskdjflksdjflkdjlskdjflskdfljkd",
     "imageUrl": "https://res-1.cloudinary.com/mp-assets/image/upload/c_pad,f_auto,q_auto,w_550/v1526657428/i-scream/content/images/0/0003422_rubiks-cube-microbead-pillow.png",
-    "difficultyLevel": "6"
+    "difficultyLevel": 6
   }
 ]
