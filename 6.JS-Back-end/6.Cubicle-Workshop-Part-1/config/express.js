@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 
 module.exports = (app) => {
   // TODO: Setup the view engine
-  app.engine('.hbs', exphbs({ extname: '.hbs' }));
+  app.engine('.hbs', exphbs({ extname: '.hbs', defaultLayout: false }));
   app.set('view engine', '.hbs');
 
   // TODO: Setup the body parser

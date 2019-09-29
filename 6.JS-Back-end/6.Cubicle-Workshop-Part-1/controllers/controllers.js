@@ -11,7 +11,7 @@ module.exports = {
 
       const cubes = JSON.parse(data);
       res.render('index', {
-        layout: false,
+        // layout: false,
         cubes,
       });
     });
@@ -27,28 +27,25 @@ module.exports = {
       const cubes = JSON.parse(data);
       let result;
       if (!from || !to) {
-        result = cubes.filter((cube) => cube.name.includes(search));
+        result = cubes.filter(cube => cube.name.includes(search));
       } else {
-        result = cubes.filter((cube) => cube.name.includes(search) && cube.difficultyLevel >= Number(from) && cube.difficultyLevel <= Number(to));
+        result = cubes.filter(cube => cube.name.includes(search) && cube.difficultyLevel >= Number(from) && cube.difficultyLevel <= Number(to));
       }
 
       if (result.length === 0) {
         res.redirect('/');
       } else {
-        res.render('index', {
-          layout: false,
-          cubes: result,
-        });
+        res.render('index', { cubes: result });
       }
     });
   },
 
   about: (req, res) => {
-    res.render('about', { layout: false });
+    res.render('about');
   },
 
   createGet: (req, res) => {
-    res.render('create', { layout: false });
+    res.render('create');
   },
 
   createPost: (req, res) => {
@@ -79,7 +76,7 @@ module.exports = {
     fs.readFile('./config/database.json', (err, data) => {
       if (err) console.log(err);
 
-      const wantedCube = JSON.parse(data).find((obj) => obj.id === id);
+      const wantedCube = JSON.parse(data).find(obj => obj.id === id);
 
       // check if cube with this id doesn't exist
       if (!wantedCube) {
@@ -87,14 +84,11 @@ module.exports = {
         return;
       }
 
-      res.render('details', {
-        layout: false,
-        cube: wantedCube,
-      });
+      res.render('details', { cube: wantedCube });
     });
   },
 
   error: (req, res) => {
-    res.render('404', { layout: false });
+    res.render('404');
   },
 };

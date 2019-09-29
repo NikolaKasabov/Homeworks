@@ -1,7 +1,6 @@
 const controllers = require('../controllers/controllers');
 
 module.exports = (app) => {
-  // TODO...
   app.get('/', controllers.homeGet);
   app.post('/', controllers.homePost);
   app.get('/about', controllers.about);
