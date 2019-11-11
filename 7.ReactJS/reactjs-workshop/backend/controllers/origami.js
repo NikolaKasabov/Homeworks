@@ -3,7 +3,16 @@ const models = require('../models');
 module.exports = {
   get: (req, res, next) => {
     models.Origami.find()
-      .then((origamies) => res.send(origamies))
+      .populate('author')
+      .then((origamies) => {
+        const origamiesToSend = origamies.map((origami) => {
+          return {
+            description: origami.description,
+            author: origami.author.username,
+          }
+        });
+        res.send(origamiesToSend);
+      })
       .catch(next);
   },
 

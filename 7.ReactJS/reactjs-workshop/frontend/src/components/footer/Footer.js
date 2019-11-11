@@ -17,7 +17,7 @@ class Footer extends Component {
       <footer className="Footer">
         <ul>
           {this.state.linksNumber.map((number) => <Link key={number} number={number} />)}
-          <li className="listItem"><img src={process.env.PUBLIC_URL + '/blue-origami-bird-flipped.png'} /></li>
+          <li className="listItem"><img alt="" src={process.env.PUBLIC_URL + '/blue-origami-bird-flipped.png'} /></li>
         </ul>
         <p>Software University &copy; 2019</p>
       </footer>

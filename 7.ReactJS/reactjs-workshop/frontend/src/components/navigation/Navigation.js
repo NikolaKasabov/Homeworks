@@ -16,7 +16,7 @@ class Navigation extends Component {
     return (
       <nav className="Navigation">
         <ul>
-          <li className="listItem"><img src={process.env.PUBLIC_URL + '/white-origami-bird.png'} /></li>
+          <li className="listItem"><img alt="" src={process.env.PUBLIC_URL + '/white-origami-bird.png'} /></li>
           {this.state.linksNumber.map((number) => <Link key={number} number={number} />)}
         </ul>
       </nav>
